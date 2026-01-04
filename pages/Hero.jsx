@@ -63,7 +63,7 @@ function HeroSection() {
                 </div>
                 <div className="flex-1 flex items-center justify-center h-[400px] md:h-[500px] ">
                     <div className="relative z-10 w-full max-w-[500px] text-left flex flex-col items-start justify-center h-full bg-transparent rounded-lg  mt-8 md:mt-0">
-                        <h1 className="text-5xl md:text-5xl font-serif text-[#000000] mb-6 font-bold">Gupta Law Offices</h1>
+                        <h1 className="text-5xl md:text-5xl font-serif text-[#000000] mb-6 font-bold">V M Financial services</h1>
                         <p className="text-lg md:text-lg text-[#1a1a19] mb-6">
                             Backed by 13+ years of experience, our law firm offers smart, practical, and effective legal services for clients across different sectors.
                         </p>
@@ -80,10 +80,10 @@ function HeroSection() {
                                 className="block text-3xl font-signature text-[#000000] mb-2"
                                 style={{ fontFamily: 'Dancing Script, cursive' }}
                             >
-                                Naman Gupta
+                                REKHA GUPTA
                             </span>
                             <span className="block text-xs tracking-widest text-[#000000]">
-                                FOUNDER, GUPTA LAW OFFICES
+                                FOUNDER, V M Financial services
                             </span>
                         </div>
                     </div>

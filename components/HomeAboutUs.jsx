@@ -12,8 +12,8 @@ function HomeAboutUs() {
               Our law firm is dedicated to providing reliable and effective legal services backed by over 13 years of professional experience. With a team of skilled associates and a strong foundation of practical knowledge, we offer comprehensive legal solutions tailored to the needs of individuals, businesses, and organizations. We focus on professionalism, transparency, and delivering results that protect our clients’ best interests.
             </p>
             <div className="mt-8 mb-2">
-              <span className="block text-3xl font-signature text-[#000000] mb-2" style={{ fontFamily: 'Dancing Script, cursive' }}>Naman Gupta</span>
-              <span className="block text-xs tracking-widest text-[#000000]"> Founder of Gupta Law ffice</span>
+              <span className="block text-3xl font-signature text-[#000000] mb-2" style={{ fontFamily: 'Dancing Script, cursive' }}>REKHA GUPTA</span>
+              <span className="block text-xs tracking-widest text-[#000000]"> Founder of V M Financial services</span>
             </div>
             <button
               className="text-[#910606] text-xl hover:text-2xl duration-300 rounded font-semibold mb-10  hover:text-[#910606df]  transition-all cursor-pointer  text-start" 

@@ -1,39 +1,18 @@
 
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import backgroundimage from '@/public/images/backgound.png';
+import HeroBanner from '../../components/HeroBanner';
 
 export default function About() {
     return (
         <div className="min-h-screen bg-white">
 
-
-            {/* Hero Section - Modern and spacious like about page */}
-            <section className="relative h-[40vh] overflow-hidden">
-                {/* Background Image with overlay */}
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src={backgroundimage.src}
-                        alt="Contact Us Background"
-                        className="h-full w-full object-cover object-center"
-                    />
-                    <div className="absolute inset-0   mix-blend-multiply"></div>
-                </div>
-
-                {/* Content */}
-                <div className="relative z-10 px-6 h-full flex items-center justify-center">
-                    <div className="mx-auto max-w-4xl text-center text-white">
-                        <div className="mb-8 inline-flex items-center rounded-full bg-red-100/90 px-4 py-2 text-sm font-medium text-[#164972] ring-1 ring-red-300">
-                            Get in Touch
-                        </div>
-                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-                            About <span className="">Us</span>
-                        </h1>
-                        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-red-100">
-                            Have questions? Reach out to us and our team will get back to you shortly.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <HeroBanner
+                pretitle="Get in Touch"
+                title={<>About <span className="">Us</span></>}
+                description="Have questions? Reach out to us and our team will get back to you shortly."
+                backgroundImage={backgroundimage}
+            />
 
 
 
@@ -43,10 +22,10 @@ export default function About() {
                         Who We Are
                     </h2>
                     <p className="text-gray-700 mb-5 leading-relaxed">
-                        <strong>Gupta Law Offices (GLO)</strong> is a distinguished law firm delivering strategic legal services backed by experience and integrity. We represent clients across diverse legal domains, offering tailored solutions that address both legal and practical concerns.
+                        <strong>V M Financial services (GLO)</strong> is a distinguished law firm delivering strategic legal services backed by experience and integrity. We represent clients across diverse legal domains, offering tailored solutions that address both legal and practical concerns.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
-                        Led by <strong>Mr. Naman Gupta</strong>, and supported by associates with more than 13 years of collective experience, the firm is known for its disciplined approach, strategic thinking, and consistent results. At GLO, we believe in delivering clear legal advice, timely solutions, and representation that clients can trust.
+                        Led by <strong>Mr. REKHA GUPTA</strong>, and supported by associates with more than 13 years of collective experience, the firm is known for its disciplined approach, strategic thinking, and consistent results. At GLO, we believe in delivering clear legal advice, timely solutions, and representation that clients can trust.
                     </p>
                 </div>
 
@@ -71,7 +50,7 @@ export default function About() {
                             Our Vision
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-justify">
-                            To establish Gupta Law Offices (GLO) as a distinguished and trusted legal institution known for its unwavering commitment to justice, ethical advocacy, and professional excellence. Our vision is to be recognized for delivering well-reasoned legal solutions that combine deep legal knowledge with practical insight, while maintaining the highest standards of integrity and accountability.
+                            To establish V M Financial services (GLO) as a distinguished and trusted legal institution known for its unwavering commitment to justice, ethical advocacy, and professional excellence. Our vision is to be recognized for delivering well-reasoned legal solutions that combine deep legal knowledge with practical insight, while maintaining the highest standards of integrity and accountability.
 
                             <br />We aspire to create a lasting impact in the legal profession by building long-term relationships with our clients, institutions, and communities, grounded in trust, transparency, and consistent results. Through continuous learning, disciplined practice, and a client-first philosophy, we aim to contribute meaningfully to the development of a fair, accessible, and effective legal system.
                         </p>
@@ -83,7 +62,7 @@ export default function About() {
                         <p className="text-gray-700 leading-relaxed text-justify">
                             Our mission is to provide comprehensive, precise, and result-oriented legal services tailored to the unique needs of each client. We are committed to representing individuals, businesses, and institutions with diligence, discretion, and strategic clarity across all stages of legal proceedings.
 
-                            <br />At Gupta Law Offices, we focus on understanding the practical realities behind every legal issue, enabling us to deliver solutions that are not only legally sound but also commercially and socially effective. We uphold the highest standards of professionalism, ethical conduct, and confidentiality while ensuring clear communication, timely action, and strong advocacy. Our goal is to protect our clients’ rights, safeguard their interests, and achieve sustainable legal outcomes through responsible and principled practice.
+                            <br />At V M Financial services, we focus on understanding the practical realities behind every legal issue, enabling us to deliver solutions that are not only legally sound but also commercially and socially effective. We uphold the highest standards of professionalism, ethical conduct, and confidentiality while ensuring clear communication, timely action, and strong advocacy. Our goal is to protect our clients’ rights, safeguard their interests, and achieve sustainable legal outcomes through responsible and principled practice.
                         </p>
                     </div>
                 </div>

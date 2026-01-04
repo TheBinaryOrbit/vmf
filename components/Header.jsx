@@ -61,6 +61,18 @@ function Navbar() {
     hover:after:scale-x-100
   `;
 
+    const handleContactClick = (e) => {
+        e.preventDefault();
+        const target = document.getElementById('contact') || document.getElementById('consultation');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            setOpen(false);
+            return;
+        }
+        // if not on same page, navigate to home with hash
+        window.location.href = '/#contact';
+    };
+
     return (
         <nav className="sticky top-0 z-[100] bg-white sm:pl-16 px-6 py-3 flex items-center justify-between shadow-md">
             {/* Progress track */}
@@ -87,7 +99,11 @@ function Navbar() {
 
                 <Link href="/about" className={navLinkClasses}>About Us</Link>
 
-                <Link href="/contact-us" className={navLinkClasses}>Contact Us</Link>
+                <Link href="/award" className={navLinkClasses}>Award and Recognition</Link>
+
+                <Link href="/whychooseus" className={navLinkClasses}>Why Choose Us</Link>
+
+                <a href="#contact" onClick={handleContactClick} className={navLinkClasses}>Contact Us</a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -128,7 +144,7 @@ function Navbar() {
                         <Link href="/service" className={navLinkClasses} onClick={() => setOpen(false)}>Services</Link>
 
                         <Link href="/about" className={navLinkClasses} onClick={() => setOpen(false)}>About Us</Link>
-                        <Link href="/contact-us" className={navLinkClasses} onClick={() => setOpen(false)}>Contact Us</Link>
+                        <a href="#contact" className={navLinkClasses} onClick={(e) => { handleContactClick(e); setOpen(false); }}>Contact Us</a>
 
                     </div>
                 </div>
