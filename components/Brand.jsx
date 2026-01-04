@@ -3,44 +3,55 @@ export default function Brand() {
     const brands = [
         {
             name: "Google",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+            logoUrl: "https://www.axismaxlife.com/static-page/assets/homepage/axis-max-life-insurance-logo.svg",
             href: "https://www.google.com",
         },
         {
             name: "Microsoft",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
             href: "https://www.microsoft.com",
         },
         {
             name: "Amazon",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
             href: "https://www.amazon.com",
         },
         {
-            name: "Apple",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-            href: "https://www.apple.com",
+            name: "Microsoft",
+            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
+            href: "https://www.microsoft.com",
         },
         {
-            name: "Meta",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/71/Meta_Platforms_Inc._logo.svg",
-            href: "https://about.meta.com",
+            name: "Amazon",
+            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
+            href: "https://www.amazon.com",
         },
         {
-            name: "Netflix",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
-            href: "https://www.netflix.com",
+            name: "Google",
+            logoUrl: "https://www.axismaxlife.com/static-page/assets/homepage/axis-max-life-insurance-logo.svg",
+            href: "https://www.google.com",
         },
         {
-            name: "Tesla",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Tesla_Motors.svg",
-            href: "https://www.tesla.com",
+            name: "Microsoft",
+            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
+            href: "https://www.microsoft.com",
         },
         {
-            name: "Adobe",
-            logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Adobe_Corporate_logo.svg",
-            href: "https://www.adobe.com",
+            name: "Amazon",
+            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
+            href: "https://www.amazon.com",
         },
+        {
+            name: "Microsoft",
+            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
+            href: "https://www.microsoft.com",
+        },
+        {
+            name: "Amazon",
+            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
+            href: "https://www.amazon.com",
+        },
+        
     ];
 
 
@@ -54,16 +65,16 @@ export default function Brand() {
                             our partners
           </span>
                         <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">
-                            Brands Trust Us
+                            Brands Associated With
                         </h2>
                     </div>
 
                     {/* Brand Grid mapping */}
                     <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-3 xl:grid-cols-5 xl:gap-12">
                         {brands.map((brand, index) => (
-                            <a
+                            <p
                                 key={index}
-                                href={brand.href}
+                                // href={brand.href}
                                 className="flex justify-center items-center group p-4"
                             >
                                 <img
@@ -71,7 +82,7 @@ export default function Brand() {
                                     alt={`${brand.name} logo`}
                                     className="h-10 w-full max-w-[140px] object-contain transition-all duration-300  group-hover:opacity-100"
                                 />
-                            </a>
+                            </p>
                         ))}
                     </div>
                 </div>

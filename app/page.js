@@ -10,9 +10,11 @@ export default function App() {
   return (
     <>
       <HeroSection />
-      <HomeAboutUs />
+      <HomeAboutUs />      
+      <section className="bg-[#910606]">
+        <WhyChooseUs />
+      </section>
       <ServicesPage />
-      <WhyChooseUs  />
       <Brand />
       <TestimonialSection />
       <Contact />

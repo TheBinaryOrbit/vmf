@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { Facebook, Instagram, Linkedin, Smartphone, Apple } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Smartphone, Apple, Twitter } from 'lucide-react';
 import { PlaySquare } from 'lucide-react';
 import logo from '@/public/images/logo.png';
 import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#910606] rounded-t-3xl h-fit p-5">
+        <footer className="w-full bg-[#7a0505] rounded-t-3xl h-fit p-5">
             <div className="max-w-7xl mx-auto">
                 <div className='flex flex-col md:flex-row justify-between items-center mb-10 text-center md:text-left'>
                     {/* <Image src={img} alt="img" className='w-32' /> */}
@@ -58,9 +58,14 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='border-t-2 max-w-7xl mx-auto border-gray-200 py-5 flex flex-col md:flex-row justify-center items-center'>
+            <div className='border-t-2 max-w-7xl mx-auto border-gray-200 py-5 flex flex-col md:flex-row justify-between items-center'>
                 <p className='text-white text-sm mb-3 sm:mb-0'>Copyright ©2025 Mediisist Pvt Ltd</p>
-                
+                <ul className='flex gap-2'>
+                    <li><a href=""><Facebook size={20} className='text-white'/></a></li>
+                    <li><a href=""><Instagram size={20} className='text-white' /></a></li>
+                    <li><a href=""><Linkedin size={20} className='text-white' /></a></li>
+                    <li><a href=""><Twitter size={20}  className='text-white'/></a></li>
+                </ul>
             </div>
         </footer>
     );

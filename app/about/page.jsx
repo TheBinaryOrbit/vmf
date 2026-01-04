@@ -68,7 +68,7 @@ export default function About() {
                 </div>
             </div>
             {/* Map Section - Integrated design like about page */}
-            {/* <section className="sm:py-32">
+            <section className="sm:py-32">
                 <div className="mx-auto max-w-7xl px-6">
                     
                     <div className="relative">
@@ -87,7 +87,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* FAQ Section - Modern card grid */}
             <section className="bg-slate-50 py-24 sm:py-32">
