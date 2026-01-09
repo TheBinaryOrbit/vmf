@@ -1,16 +1,30 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { ArrowLeft, CheckCircle2 ,
+import { ArrowLeft, CheckCircle2,
   HeartPlus,
   Activity,
   ShieldCheck,
   ShieldAlert,
   Shield,
   Heart, Car,
- } from 'lucide-react'; // Suggested: npm install lucide-react
-import { servicesData } from '../page.jsx';
-
+ } from 'lucide-react';
+import { services } from '@/script/data';
 import { useParams } from 'next/navigation.js';
+
+// Map icon names to actual components
+const iconMap = {
+  HeartPlus: <HeartPlus className="w-12 h-12 text-red-700" />,
+  Activity: <Activity className="w-12 h-12 text-orange-700" />,
+  Car: <Car className="w-12 h-12 text-blue-700" />,
+  ShieldAlert: <ShieldAlert className="w-12 h-12 text-yellow-700" />
+};
+
+// Convert icon names to components
+const servicesData = services.servicesData.map(service => ({
+  ...service,
+  icon: iconMap[service.icon],
+  tabIcon: iconMap[service.tabIcon]
+}));
 
 function ServiceDetails() {
   const params = useParams();

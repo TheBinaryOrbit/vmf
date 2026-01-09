@@ -1,5 +1,6 @@
 import ContactFrom from '@/components/ContactForm'
 import { MapPin, Phone, Mail, Clock, CheckCircle2 } from "lucide-react"
+import { contact } from '@/script/data'
 
 export default function Contact() {
     return (
@@ -7,15 +8,13 @@ export default function Contact() {
             {/* Header Section */}
             <div className="text-center mb-16 px-4">
                 <span className="inline-block px-4 py-1 border border-[#910606]/40 text-[#910606] rounded-md text-sm font-semibold mb-4 bg-red-50/50">
-                    Contact Us
+                    {contact.heading.badge}
                 </span>
                 <h2 className="mt-3 text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                    Let’s Plan Wisely Today for a <span className="text-[#910606]">Secure Tomorrow</span>
+                        {contact.heading.main} <span className="text-[#910606]">{contact.heading.highlight}</span>
                 </h2>
                 <p className="mt-6 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                    Whether you’re exploring insurance for the first time or reviewing your existing plans,
-                    we’re here to guide you with clarity and care. Reach out to us for personalized advice
-                    and trusted financial solutions.
+                    {contact.description}
                 </p>
             </div>
 
@@ -27,15 +26,9 @@ export default function Contact() {
                     {/* Left Side: Contact Form & Services List */}
                     <div className="flex flex-col gap-10">
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-6">How Can We Help You?</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-6">{contact.services.title}</h3>
                             <ul className="space-y-4">
-                                {[
-                                    "Choosing the right life insurance plan",
-                                    "Understanding health insurance coverage",
-                                    "Securing your family’s financial future",
-                                    "Reviewing existing policies",
-                                    "Minimum investment & maximum protection"
-                                ].map((item, index) => (
+                                {contact.services.list.map((item, index) => (
                                     <li key={index} className="flex items-center gap-3 text-gray-700">
                                         <CheckCircle2 className="h-5 w-5 text-[#910606] flex-shrink-0" />
                                         <span>{item}</span>
@@ -51,7 +44,7 @@ export default function Contact() {
                     <div className="flex flex-col justify-start lg:pt-4">
                         <div className="mb-5">
                             <h2 className="text-sm font-bold uppercase tracking-widest text-[#910606] mb-2">
-                                Contact Details
+                                {contact.contactInfo.sectionTitle}
                             </h2>
                             <div className="h-1 w-12 bg-[#910606]"></div>
                         </div>
@@ -63,9 +56,9 @@ export default function Contact() {
                                     <Phone className="h-6 w-6 text-[#910606] group-hover:text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-1">Call / WhatsApp</h3>
-                                    <a href="tel:+919910082424" className="text-xl font-medium text-gray-600 hover:text-[#910606] transition-colors">
-                                        +91 99100 82424
+                                    <h3 className="text-lg font-bold text-gray-900 mb-1">{contact.contactInfo.phone.label}</h3>
+                                    <a href={contact.contactInfo.phone.href} className="text-xl font-medium text-gray-600 hover:text-[#910606] transition-colors">
+                                        {contact.contactInfo.phone.number}
                                     </a>
                                 </div>
                             </div>
@@ -76,9 +69,9 @@ export default function Contact() {
                                     <Mail className="h-6 w-6 text-[#910606] group-hover:text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-1">Email</h3>
-                                    <a href="mailto:rekhajune5@gmail.com" className="text-gray-600 hover:text-[#910606] transition-colors">
-                                        rekhajune5@gmail.com
+                                    <h3 className="text-lg font-bold text-gray-900 mb-1">{contact.contactInfo.email.label}</h3>
+                                    <a href={contact.contactInfo.email.href} className="text-gray-600 hover:text-[#910606] transition-colors">
+                                        {contact.contactInfo.email.address}
                                     </a>
                                 </div>
                             </div>
@@ -89,11 +82,11 @@ export default function Contact() {
                                     <Clock className="h-6 w-6 text-[#910606] group-hover:text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-1">Office Hours</h3>
+                                    <h3 className="text-lg font-bold text-gray-900 mb-1">{contact.contactInfo.hours.label}</h3>
                                     <div className="text-gray-600 space-y-1">
-                                        <p className="font-medium">Monday to Saturday</p>
-                                        <p>10:00 AM – 6:00 PM</p>
-                                        <p className="text-sm italic text-gray-500 mt-2">(Consultations available by prior appointment)</p>
+                                        <p className="font-medium">{contact.contactInfo.hours.days}</p>
+                                        <p>{contact.contactInfo.hours.time}</p>
+                                        <p className="text-sm italic text-gray-500 mt-2">{contact.contactInfo.hours.note}</p>
                                     </div>
                                 </div>
                             </div>

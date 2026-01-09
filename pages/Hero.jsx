@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from 'react';
-import slider1 from '@/public/images/slider1.jpeg';
-import slider2 from '@/public/images/slider2.jpeg';
-import slider3 from '@/public/images/slider3.jpeg';
 import Image from 'next/image';
+import { home } from '@/script/data.js';
+
+
 
 function HeroSection() {
-    const images = [slider1, slider2, slider3];
+    const images = home.images;
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
@@ -40,7 +40,7 @@ function HeroSection() {
                                 </svg>
                             </button>
                             <Image
-                                src={images[current]}
+                                src={require(`@/public/images/slider${current + 1}.jpeg`)}
                                 alt={`Insurance Slide ${current + 1}`}
                                 className="object-cover w-full h-full transition-all duration-700 ease-in-out animate-fade"
                                 style={{ aspectRatio: '16/7' }}
@@ -60,27 +60,27 @@ function HeroSection() {
                         <div className="relative z-10 w-full max-w-[500px] text-left flex flex-col items-start justify-center h-full bg-transparent rounded-lg mt-8 md:mt-0">
                             {/* Main Headline */}
                             <h1 className="text-3xl md:text-4xl font-serif text-[#000000] mb-4 font-bold leading-tight">
-                                Protecting Your Today. <br /> Securing Their Tomorrow.
+                                {home.heading.part1} <br /> {home.heading.part2}
                             </h1>
 
                             {/* Sub-headline */}
                             <h2 className="text-xl font-semibold text-[#910606] mb-4">
-                                Turning smart planning into lasting peace of mind.
+                                {home.subheading}
                             </h2>
 
                             {/* Detailed Body Text */}
                             <p className="text-base md:text-lg text-[#1a1a19] mb-8 leading-relaxed">
-                                With the right guidance, even a small, smart investment today can create lifelong security for your family. At <strong>V M Financial Services</strong>, we help individuals and families protect what matters most — with clarity, confidence, and care.
+                                {home.description}
                             </p>
 
                             {/* Call to Action Button */}
                             <button
                                 onClick={() =>
-                                    document.getElementById('consultation')?.scrollIntoView({ behavior: 'smooth' })
+                                    document.getElementById(home.button.link)?.scrollIntoView({ behavior: 'smooth' })
                                 }
                                 className="bg-[#910606] text-white px-7 py-3 rounded font-semibold mb-10 shadow hover:bg-[#910606df] transition-all cursor-pointer"
                             >
-                                Book a Free Consultation &rarr;
+                                {home.button.text}
                             </button>
 
                             {/* Founder Signature Section */}
@@ -89,10 +89,10 @@ function HeroSection() {
                                     className="block text-3xl font-signature text-[#000000] mb-2"
                                     style={{ fontFamily: 'Dancing Script, cursive' }}
                                 >
-                                    Rekha Gupta
+                                    {home.founder.name}
                                 </span>
                                 <span className="block text-xs tracking-widest text-[#000000]">
-                                    FOUNDER, V M FINANCIAL SERVICES
+                                    {home.founder.title}
                                 </span>
                             </div>
                         </div>

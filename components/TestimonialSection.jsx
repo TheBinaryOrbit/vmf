@@ -1,33 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Quote } from 'lucide-react';
-
-const allTestimonials = [
-  // Page 1
-  [
-    { id: 1, name: "Jane Doe", profession: "Software Engineer", image: "https://i.pravatar.cc/150?u=1", text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat." },
-    { id: 2, name: "John Smith", profession: "Product Manager", image: "https://i.pravatar.cc/150?u=2", text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat." },
-    { id: 3, name: "Sarah Jenkins", profession: "UX Designer", image: "https://i.pravatar.cc/150?u=3", text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat." },
-  ],
-  // Page 2
-  [
-    { id: 4, name: "Michael Chen", profession: "Data Scientist", image: "https://i.pravatar.cc/150?u=4", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita." },
-    { id: 5, name: "Emily Blunt", profession: "Marketing Lead", image: "https://i.pravatar.cc/150?u=5", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita." },
-    { id: 6, name: "David Wilson", profession: "CTO", image: "https://i.pravatar.cc/150?u=6", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita." },
-  ],
-  // Page 3
-  [
-    { id: 7, name: "Alice Cooper", profession: "DevOps", image: "https://i.pravatar.cc/150?u=7", text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt." },
-    { id: 8, name: "Robert Fox", profession: "Designer", image: "https://i.pravatar.cc/150?u=8", text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt." },
-    { id: 9, name: "Sonia Gupta", profession: "Founder", image: "https://i.pravatar.cc/150?u=9", text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt." },
-  ],
-  // Page 4
-  [
-    { id: 10, name: "Tom Hardy", profession: "Sales", image: "https://i.pravatar.cc/150?u=10", text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo." },
-    { id: 11, name: "Lucy Liu", profession: "Operations", image: "https://i.pravatar.cc/150?u=11", text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo." },
-    { id: 12, name: "Kevin Hart", profession: "HR", image: "https://i.pravatar.cc/150?u=12", text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo." },
-  ]
-];
+import { testimonials } from '@/script/data';
 
 const TestimonialSection = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -51,14 +25,14 @@ const TestimonialSection = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 border border-[#910606]/40 text-[#910606] rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
-            Testimonial
+            {testimonials.badge}
           </span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">What Our Clients Say!</h2>
+          <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">{testimonials.heading}</h2>
         </div>
 
         {/* Testimonials Grid with Animation */}
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 transition-opacity duration-300 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
-          {allTestimonials[currentPage].map((item) => (
+          {testimonials.pages[currentPage].map((item) => (
             <div key={item.id} className="flex flex-col items-center">
               
               {/* The Bubble */}
@@ -94,7 +68,7 @@ const TestimonialSection = () => {
 
         {/* Navigation Dots */}
         <div className="flex justify-center space-x-4 mt-16">
-          {allTestimonials.map((_, index) => (
+          {testimonials.pages.map((_, index) => (
             <button
               key={index}
               onClick={() => handlePageChange(index)}

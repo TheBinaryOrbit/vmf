@@ -2,40 +2,23 @@
 import backgroundimage from '@/public/images/backgound.png';
 import { Award, Star, ShieldCheck, Trophy, Landmark, ArrowUpRight } from 'lucide-react';
 import HeroBanner from '../../components/HeroBanner';
+import { awards } from '@/script/data';
 
+// Map icon names to actual components
+const iconMap = {
+    Trophy: Trophy,
+    Award: Award,
+    Landmark: Landmark
+};
 
-const achievements = [
-    {
-        id: "01",
-        title: "3x MDRT Qualifier",
-        subtitle: "Million Dollar Round Table",
-        desc: "Recognized among the top 1% of financial professionals globally for exceptional professional knowledge and strict ethical conduct.",
-        icon: <Trophy className="w-8 h-8 text-amber-500" />,
-        badge: "Global Standard",
-        bg: "from-amber-500/10 to-transparent",
-        border: "hover:border-amber-500/50"
-    },
-    {
-        id: "02",
-        title: "Ace Life Advisor",
-        subtitle: "Top Tier Designation",
-        desc: "Awarded for consistent excellence in insurance planning and maintaining a high portfolio persistence rate.",
-        icon: <Award className="w-8 h-8 text-[#910606]" />,
-        badge: "Premium Status",
-        bg: "from-[#910606]/10 to-transparent",
-        border: "hover:border-[#910606]/50"
-    },
-    {
-        id: "03",
-        title: "9+ Years Journey",
-        subtitle: "Experience & Trust",
-        desc: "A decade of transforming financial futures through customized 'Minimum Investment, Maximum Benefit' strategies.",
-        icon: <Landmark className="w-8 h-8 text-emerald-600" />,
-        badge: "Veteran Advisor",
-        bg: "from-emerald-600/10 to-transparent",
-        border: "hover:border-emerald-600/50"
-    }
-];
+// Convert icon names to components
+const achievements = awards.achievements.map(achievement => {
+    const IconComponent = iconMap[achievement.icon];
+    return {
+        ...achievement,
+        icon: <IconComponent className={`w-8 h-8 ${achievement.iconColor}`} />
+    };
+});
 
 export default function Page() {
     return (
@@ -43,9 +26,9 @@ export default function Page() {
 
 
             <HeroBanner
-                pretitle="Our Achievements"
-                title="Award and Recognition"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, possimus."
+                pretitle={awards.hero.pretitle}
+                title={awards.hero.title}
+                description={awards.hero.description}
                 backgroundImage={backgroundimage}
             />
 
@@ -55,11 +38,11 @@ export default function Page() {
                     {/* Section Header */}
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
                         <div className="max-w-2xl">
-                            <h2 className="text-[#910606] font-bold tracking-widest text-sm mb-3">MILESTONES</h2>
+                            <h2 className="text-[#910606] font-bold tracking-widest text-sm mb-3">{awards.section.badge}</h2>
                             <h3 className="text-4xl md:text-5xl font-black text-[#001d3d]">
-                                Recognized Excellence in <br />
+                                {awards.section.heading} <br />
                                 <span className="text-transparent bg-clip-text bg-[#910606]">
-                                    Financial Advisory
+                                    {awards.section.highlightedText}
                                 </span>
                             </h3>
                         </div>
@@ -71,10 +54,10 @@ export default function Page() {
                                     </div>
                                 ))}
                                 <div className="w-12 h-12 rounded-full border-4 border-white bg-[#001d3d] flex items-center justify-center text-white text-xs font-bold">
-                                    500+
+                                    {awards.section.trustBadge.count}
                                 </div>
                             </div>
-                            <p className="text-xs text-gray-500 mt-2 font-medium">TRUSTED BY 500+ FAMILIES</p>
+                            <p className="text-xs text-gray-500 mt-2 font-medium">{awards.section.trustBadge.text}</p>
                         </div>
                     </div>
 
