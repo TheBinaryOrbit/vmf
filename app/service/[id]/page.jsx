@@ -10,6 +10,7 @@ import { ArrowLeft, CheckCircle2,
  } from 'lucide-react';
 import { services } from '@/script/data';
 import { useParams } from 'next/navigation.js';
+import FloatingButton from '@/components/FoatingButton';
 
 // Map icon names to actual components
 const iconMap = {

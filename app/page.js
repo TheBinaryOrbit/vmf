@@ -18,7 +18,7 @@ export default function App() {
       <Brand />
       <TestimonialSection />
       <Contact />
-      <FloatingButton />
+      {/* <FloatingButton /> */}
     </>
   );
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Head from "next/head";
 import Footer from "@/components/Footer";
+import FloatingButton from "@/components/FoatingButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <FloatingButton />
       </body>
     </html>
   );
