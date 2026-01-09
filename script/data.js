@@ -4,7 +4,7 @@ export const home = {
         part2: "Securing Their Tomorrow."
     },
     subheading: "Turning smart planning into lasting peace of mind.",
-    description: "With the right guidance, even a small, smart investment today can create lifelong security for your family. At <strong>V M Financial Services</strong>, we help individuals and families protect what matters most — with clarity, confidence, and care.",
+    description: "With the right guidance, even a small, smart investment today can create lifelong security for your family. At V M Financial Services, we help individuals and families protect what matters most — with clarity, confidence, and care.",
     button: {
         text: "Book a Free Consultation →",
         link: "#contact"
@@ -494,4 +494,27 @@ export const awards = {
             iconColor: "text-emerald-600"
         }
     ]
+}
+
+
+export const floatingbutton = {
+    phoneNumber: "9810082424",
+    whatsappLink: "https://wa.me/919810082424?text=Hello%20I%20want%20to%20connect",
+    callIconPath: "@/public/images/call.png",
+    whatsappIconUrl: "https://img.icons8.com/?size=60&id=QkXeKixybttw&format=png&color=000000"
+}
+
+export const footer = {
+    companyName: "V M Financial Services",
+    companydesc: " Invest Wisely operates as an independent insurance advisory service. Insurance is subject to policy terms, conditions, and insurer approval. Please read all documents carefully before investing.",
+    companycopiright: "© 2025 Invest Wisely by Rekha Gupta. All Rights Reserved.",
+    address: "123 Finance Street, Money City, Country",
+    phone: "+91 99100 82424",
+    email: "rekhajune5@gmail.com",
+    socialMedia: {
+        facebook: "https://facebook.com/vmfinancialservices",
+        twitter: "https://twitter.com/vmfinancialservices",
+        linkedin: "https://linkedin.com/company/vmfinancialservices",
+        instagram: "https://instagram.com/vmfinancialservices"
+    },
 }
