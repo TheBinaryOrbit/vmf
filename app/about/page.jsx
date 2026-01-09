@@ -21,19 +21,29 @@ export default function About() {
                     <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#910606] pl-4">
                         Who We Are
                     </h2>
-                    <p className="text-gray-700 mb-5 leading-relaxed">
-                        <strong>V M Financial services (GLO)</strong> is a distinguished law firm delivering strategic legal services backed by experience and integrity. We represent clients across diverse legal domains, offering tailored solutions that address both legal and practical concerns.
+                    <p className="text-gray-700 mb-5 leading-relaxed text-justify">
+                        <strong>At V M Financial Services </strong>, we believe that financial security is not just about policies and plans — it’s about protecting lives, dreams, and peace of mind.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
-                        Led by <strong>Mr. REKHA GUPTA</strong>, and supported by associates with more than 13 years of collective experience, the firm is known for its disciplined approach, strategic thinking, and consistent results. At GLO, we believe in delivering clear legal advice, timely solutions, and representation that clients can trust.
+                    <p className="text-gray-700 leading-relaxed mb-5 text-justify">
+                        <b> Founded in 2016 </b>, our journey began with a simple yet powerful purpose: to help families feel confident about their future. Over the years, we have worked closely with individuals, families, and professionals who wanted clarity, honesty, and guidance in an otherwise complex financial world.
                     </p>
+                    <p className="text-gray-700 leading-relaxed mb-5 text-justify">
+                        Many people delay insurance decisions due to lack of awareness, fear of commitment, or confusion caused by too many options. We exist to change that. Our approach is rooted in <b>education first</b> — we help you understand before you decide. Every recommendation is carefully crafted after understanding your goals, budget, family responsibilities, and long-term aspirations.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-5 text-justify">
+                        What sets us apart is our commitment to <b>customized solutions</b>. We do not believe in one-size-fits-all planning. Whether it’s life insurance, health coverage, or general insurance, our focus is always on <b>minimum investment with maximum protection</b>, ensuring your loved ones remain financially secure even in unforeseen situations.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed text-justify">
+                        At V M Financial Services, relationships matter more than transactions. We aim to be your <b>long-term financial partner</b>, supporting you through every life stage — from starting your career and building a family to planning retirement with confidence. Transparency, trust, and reliability form the foundation of everything we do.
+                    </p>
+                    
                 </div>
 
                 <div className="relative">
                     <img
                         src={backgroundimage.src}
                         alt="Law office interior"
-                        className="rounded-2xl shadow-2xl border border-[#e5d3b3]"
+                        className="rounded-2xl shadow-2xl border border-[#e5d3b3] "
                     />
                     <div className="absolute -bottom-6 -left-6 bg-[#910606] text-white px-6 py-3 rounded-lg shadow-lg">
                         <p className="text-sm font-medium tracking-wide">
@@ -50,9 +60,7 @@ export default function About() {
                             Our Vision
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-justify">
-                            To establish V M Financial services (GLO) as a distinguished and trusted legal institution known for its unwavering commitment to justice, ethical advocacy, and professional excellence. Our vision is to be recognized for delivering well-reasoned legal solutions that combine deep legal knowledge with practical insight, while maintaining the highest standards of integrity and accountability.
-
-                            <br />We aspire to create a lasting impact in the legal profession by building long-term relationships with our clients, institutions, and communities, grounded in trust, transparency, and consistent results. Through continuous learning, disciplined practice, and a client-first philosophy, we aim to contribute meaningfully to the development of a fair, accessible, and effective legal system.
+                            To create awareness about the importance of insurance and financial protection, and help more families secure their future through smart, customized planning.
                         </p>
                     </div>
                     <div>
@@ -60,15 +68,13 @@ export default function About() {
                             Our Mission
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-justify">
-                            Our mission is to provide comprehensive, precise, and result-oriented legal services tailored to the unique needs of each client. We are committed to representing individuals, businesses, and institutions with diligence, discretion, and strategic clarity across all stages of legal proceedings.
-
-                            <br />At V M Financial services, we focus on understanding the practical realities behind every legal issue, enabling us to deliver solutions that are not only legally sound but also commercially and socially effective. We uphold the highest standards of professionalism, ethical conduct, and confidentiality while ensuring clear communication, timely action, and strong advocacy. Our goal is to protect our clients’ rights, safeguard their interests, and achieve sustainable legal outcomes through responsible and principled practice.
+                            To become a trusted lifelong financial partner for families, ensuring minimum investment with maximum protection, peace of mind, and long-term security.
                         </p>
                     </div>
                 </div>
             </div>
             {/* Map Section - Integrated design like about page */}
-            <section className="sm:py-32">
+            {/* <section className="sm:py-32">
                 <div className="mx-auto max-w-7xl px-6">
                     
                     <div className="relative">
@@ -87,7 +93,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FAQ Section - Modern card grid */}
             <section className="bg-slate-50 py-24 sm:py-32">

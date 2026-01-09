@@ -12,9 +12,9 @@ export default function FloatingButton() {
       </a>
       <a href="" aria-label="Call 24x7 Support">
         
-          <a href="https://wa.me/919810082424?text=Hello%20I%20want%20to%20connect">
+          {/* <a href="https://wa.me/919810082424?text=Hello%20I%20want%20to%20connect">
             <img src="https://img.icons8.com/?size=60&id=QkXeKixybttw&format=png&color=000000" alt="" className='duration-300 animate-bounce'/>
-          </a>
+          </a> */}
         
       </a>
     </div>

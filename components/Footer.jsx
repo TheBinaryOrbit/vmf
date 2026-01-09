@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className=' col-span-2 flex flex-col items-center justify-start sm:items-start sm:justify-between sm:pr-5'>
                         <img src={logo.src} alt="footer logo" className='w-48 mb-3' />
                         <p className='text-slate-200 text-center sm:text-justify text-sm pr-0 sm:pr-10 font-body'>
-                            Mediisist is committed to delivering reliable, accessible, and affordable healthcare solutions. From emergency services to doctor consultations, we stand by you—because your health matters.
+                            Invest Wisely operates as an independent insurance advisory service. Insurance is subject to policy terms, conditions, and insurer approval. Please read all documents carefully before investing.
 
                         </p>
                     </div>
@@ -25,10 +25,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Services</h3>
                         <ul className="flex flex-col gap-2 text-sm">
-                            <Link href={'/#bls'} className="hover:text-gray-300 cursor-pointer">Basic Life Support</Link>
-                            <Link href={'/#als'} className="hover:text-gray-300 cursor-pointer">Advanced Life Support</Link>
-                            <Link href={'/#pt'} className="hover:text-gray-300 cursor-pointer">Patient Transport Vehicle</Link>
-                            <Link href={''} className="hover:text-gray-300 cursor-pointer">Our Diagnosis app</Link>
+                            <Link href={'/#bls'} className="hover:text-gray-300 cursor-pointer">Life Insurance</Link>
+                            <Link href={'/#als'} className="hover:text-gray-300 cursor-pointer">Health Insurance</Link>
+                            <Link href={'/#pt'} className="hover:text-gray-300 cursor-pointer">Car Insurance</Link>
+                            <Link href={''} className="hover:text-gray-300 cursor-pointer">General Insurance</Link>
                         </ul>
                     </div>
                     <div>
@@ -36,8 +36,8 @@ const Footer = () => {
                         <ul className="flex flex-col gap-2 text-sm">
                             <Link href={'/#about'} className="hover:text-gray-300 cursor-pointer">About Us</Link>
                             <Link href={'/contact'} className="hover:text-gray-300 cursor-pointer">Contact Us</Link>
-                            <Link href={'/privecypolicy'} className="hover:text-gray-300 cursor-pointer">Privacy Policy</Link>
-                            <Link href={'/termsconditions'} className="hover:text-gray-300 cursor-pointer">Terms and conditions</Link>
+                            <Link href={'/privecypolicy'} className="hover:text-gray-300 cursor-pointer">Award and Recognition</Link>
+                            {/* <Link href={'/termsconditions'} className="hover:text-gray-300 cursor-pointer">Terms and conditions</Link> */}
                         </ul>
                     </div>
                     <div>
@@ -51,20 +51,20 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contacts</h3>
                         <ul className="flex flex-col gap-2 text-sm">
-                            <li className="hover:text-gray-300 cursor-pointer">+91 88584 96391</li>
-                            <li className="hover:text-gray-300 cursor-pointer">support@mediisist.in</li>
+                            <li className="hover:text-gray-300 cursor-pointer">+91 9910082424</li>
+                            <li className="hover:text-gray-300 cursor-pointer">rekhajune5@gmail.com</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div className='border-t-2 max-w-7xl mx-auto border-gray-200 py-5 flex flex-col md:flex-row justify-between items-center'>
-                <p className='text-white text-sm mb-3 sm:mb-0'>Copyright ©2025 Mediisist Pvt Ltd</p>
+                <p className='text-white text-sm mb-3 sm:mb-0'>© 2025 Invest Wisely by Rekha Gupta. All Rights Reserved.</p>
                 <ul className='flex gap-2'>
                     <li><a href=""><Facebook size={20} className='text-white'/></a></li>
                     <li><a href=""><Instagram size={20} className='text-white' /></a></li>
                     <li><a href=""><Linkedin size={20} className='text-white' /></a></li>
-                    <li><a href=""><Twitter size={20}  className='text-white'/></a></li>
+                    {/* <li><a href=""><Twitter size={20}  className='text-white'/></a></li> */}
                 </ul>
             </div>
         </footer>
