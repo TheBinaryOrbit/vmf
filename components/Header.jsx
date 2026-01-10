@@ -59,6 +59,7 @@ function Navbar() {
     after:duration-300 
     after:ease-out
     hover:after:scale-x-100
+    text-[#740404]
   `;
 
     const handleContactClick = (e) => {
@@ -129,13 +130,13 @@ function Navbar() {
 
             {/* Mobile Menu */}
             {open && (
-                <div className="fixed inset-0 z-50">
+                <div className="fixed inset-0 z-30">
                     <div
                         className="absolute inset-0 bg-black/30 bg-opacity-40"
                         onClick={() => setOpen(false)}
                     />
                     <div
-                        className="absolute top-0 right-0 w-2/3 max-w-xs bg-[#740404] h-full shadow-lg p-6 flex flex-col gap-6 animate-slide-in"
+                        className="absolute top-0 right-0 w-2/3 max-w-xs bg-white h-full shadow-lg p-6 flex flex-col gap-6 animate-slide-in  duration-700 pt-20"
                         style={{ zIndex: 51 }}
                         onClick={(e) => e.stopPropagation()}
                     >
@@ -144,6 +145,11 @@ function Navbar() {
                         <Link href="/service" className={navLinkClasses} onClick={() => setOpen(false)}>Services</Link>
 
                         <Link href="/about" className={navLinkClasses} onClick={() => setOpen(false)}>About Us</Link>
+
+                        <Link href="/whychooseus" className={navLinkClasses} onClick={() => setOpen(false)}>Why Choose Us</Link>
+
+                        <Link href="/award" className={navLinkClasses} onClick={() => setOpen(false)}>Award and Recognition</Link>
+
                         <a href="#contact" className={navLinkClasses} onClick={(e) => { handleContactClick(e); setOpen(false); }}>Contact Us</a>
 
                     </div>

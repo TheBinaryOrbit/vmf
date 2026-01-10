@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image';
 import { homeAbout } from '@/script/data.js';
+import Link from 'next/link';
 const slider1 = require('@/public/images/slider1.jpeg');
                 
 function HomeAboutUs() {
@@ -39,13 +40,10 @@ function HomeAboutUs() {
               </span>
             </div>
 
-            <button className="text-[#910606] text-xl hover:translate-x-2 duration-300 rounded font-semibold transition-all cursor-pointer text-start mt-4" 
-              onClick={() =>
-                document.getElementById(homeAbout.button.link)?.scrollIntoView({ behavior: 'smooth' })
-              }
+            <Link href={homeAbout.button.link} className="text-[#910606] text-xl hover:translate-x-2 duration-300 rounded font-semibold transition-all cursor-pointer text-start mt-4"  
             >
               {homeAbout.button.text}
-            </button>
+            </Link>
           </div>
 
           {/* Image Section */}

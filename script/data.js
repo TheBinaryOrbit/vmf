@@ -28,7 +28,7 @@ export const homeAbout ={
     quote : "“Your family’s financial safety shouldn’t be a luxury — it should be a priority.”",
     button: {
         text: "Learn More",
-        link: "#contact"
+        link: "/about"
     },
     foundername : "Rekha Gupta",
     foundertitle : "Founder of V M Financial Services",

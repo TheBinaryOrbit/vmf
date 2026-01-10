@@ -27,8 +27,8 @@ function HeroSection() {
     return (
         <section className="w-full bg-[#910606]">
             <section className='rounded-br-0 md:rounded-br-[15%] bg-white overflow-hidden'>
-                <section className='flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-20 md:px-30 md:py-8 relative min-h-[500px] mt-0 md:mt-0 bg-white overflow-hidden shape-wavy-br-hero mb-20 '>
-                    <div className="flex-1 flex items-center w-[50%] justify-center h-[400px] md:h-[500px] mt-0 md:mt-12">
+                <section className='flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-10 px-6 py-10 sm:py-20 md:px-30 md:py-8 relative min-h-[500px] mt-0 md:mt-0 bg-white overflow-hidden shape-wavy-br-hero mb-20 '>
+                    <div className="flex-1 flex items-center w-full sm:w-[50%] justify-center h-[400px] md:h-[500px] mt-0 md:mt-12">
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full h-full max-w-[800px] max-h-[500px] flex items-center justify-center relative">
                             <button
                                 onClick={prevSlide}
@@ -56,7 +56,7 @@ function HeroSection() {
                             </button>
                         </div>
                     </div>
-                    <div className="flex-1 flex items-center w-[50%] justify-center mr-[-40] h-[400px] md:h-[500px]">
+                    <div className="flex-1 flex items-center  w-full sm:w-[50%]  justify-center sm:mr-[-40] h-[400px] md:h-[500px]">
                         <div className="relative z-10 w-full max-w-[500px] text-left flex flex-col items-start justify-center h-full bg-transparent rounded-lg mt-8 md:mt-0">
                             {/* Main Headline */}
                             <h1 className="text-3xl md:text-4xl font-serif text-[#000000] mb-4 font-bold leading-tight">
@@ -75,12 +75,9 @@ function HeroSection() {
 
                             {/* Call to Action Button */}
                             <button
-                                onClick={() =>
-                                    document.getElementById(home.button.link)?.scrollIntoView({ behavior: 'smooth' })
-                                }
                                 className="bg-[#910606] text-white px-7 py-3 rounded font-semibold mb-10 shadow hover:bg-[#910606df] transition-all cursor-pointer"
                             >
-                                {home.button.text}
+                                <a href={home.button.link}>{home.button.text}</a>
                             </button>
 
                             {/* Founder Signature Section */}

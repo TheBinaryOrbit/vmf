@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import backgroundimage from '@/public/images/backgound.png';
 import HeroBanner from '../../components/HeroBanner';
 import { about } from '@/script/data';
+import image from '@/public/images/slider1.jpeg'
 
 export default function About() {
     return (
@@ -48,7 +49,7 @@ export default function About() {
 
                 <div className="relative">
                     <img
-                        src={backgroundimage.src}
+                        src={image.src}
                         alt={about.whoWeAre.image.alt}
                         className="rounded-2xl shadow-2xl border border-[#e5d3b3] "
                     />
