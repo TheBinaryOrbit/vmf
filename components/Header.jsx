@@ -104,7 +104,7 @@ function Navbar() {
 
                 <Link href="/whychooseus" className={navLinkClasses}>Why Choose Us</Link>
 
-                <a href="#contact" onClick={handleContactClick} className={navLinkClasses}>Contact Us</a>
+                <Link href="/contact" className={navLinkClasses}>Contact Us</Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -150,7 +150,7 @@ function Navbar() {
 
                         <Link href="/award" className={navLinkClasses} onClick={() => setOpen(false)}>Award and Recognition</Link>
 
-                        <a href="#contact" className={navLinkClasses} onClick={(e) => { handleContactClick(e); setOpen(false); }}>Contact Us</a>
+                        <Link href="/contact" className={navLinkClasses} onClick={() => setOpen(false)}>Contact Us</Link>
 
                     </div>
                 </div>

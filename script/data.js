@@ -1,3 +1,4 @@
+
 export const home = {
     heading: {
         part1: "Protecting Your Today.",
@@ -247,7 +248,8 @@ export const contact = {
     badge: "Contact Us",
     heading: {
         main: "Let's Plan Wisely Today for a",
-        highlight: "Secure Tomorrow"
+        highlight: "Secure Tomorrow",
+        badge: "Get in Touch"
     },
     description: "Whether you're exploring insurance for the first time or reviewing your existing plans, we're here to guide you with clarity and care. Reach out to us for personalized advice and trusted financial solutions.",
     services: {

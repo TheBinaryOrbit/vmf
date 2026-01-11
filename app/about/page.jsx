@@ -53,11 +53,11 @@ export default function About() {
                         alt={about.whoWeAre.image.alt}
                         className="rounded-2xl shadow-2xl border border-[#e5d3b3] "
                     />
-                    <div className="absolute -bottom-6 -left-6 bg-[#910606] text-white px-6 py-3 rounded-lg shadow-lg">
+                    {/* <div className="absolute -bottom-6 -left-6 bg-[#910606] text-white px-6 py-3 rounded-lg shadow-lg">
                         <p className="text-sm font-medium tracking-wide">
                             {about.whoWeAre.image.badge}
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
