@@ -15,9 +15,11 @@ export const home = {
         title: "FOUNDER, V M FINANCIAL SERVICES"
     },
     images: [
+        '@/public/images/slider4.jpeg',
         '@/public/images/slider1.jpeg',
         '@/public/images/slider2.jpeg',
-        '@/public/images/slider3.jpeg'
+        '@/public/images/slider3.jpeg',
+        
     ]
 }
 
@@ -104,40 +106,40 @@ export const brands = {
             href: "https://www.tataaia.com"
         },
         {
-            name: "HDFC Life",
-            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
-            href: "https://www.hdfclife.com"
+            name: "Care health",
+            logoUrl: "https://www.careinsurance.com/images/care_health_insurance_logo.svg",
+            href: "https://www.careinsurance.com"
         },
         {
-            name: "Tata AIA Life",
-            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
-            href: "https://www.tataaia.com"
+            name: "HDFC Ergo",
+            logoUrl: "https://www.hdfcergo.com/images/default-source/car/logo_hdfc.png",
+            href: "https://www.hdfcergo.com/"
         },
-        {
-            name: "Axis Max Life",
-            logoUrl: "https://www.axismaxlife.com/static-page/assets/homepage/axis-max-life-insurance-logo.svg",
-            href: "https://www.axismaxlife.com"
-        },
-        {
-            name: "HDFC Life",
-            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
-            href: "https://www.hdfclife.com"
-        },
-        {
-            name: "Tata AIA Life",
-            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
-            href: "https://www.tataaia.com"
-        },
-        {
-            name: "HDFC Life",
-            logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
-            href: "https://www.hdfclife.com"
-        },
-        {
-            name: "Tata AIA Life",
-            logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
-            href: "https://www.tataaia.com"
-        }
+        // {
+        //     name: "Axis Max Life",
+        //     logoUrl: "https://www.axismaxlife.com/static-page/assets/homepage/axis-max-life-insurance-logo.svg",
+        //     href: "https://www.axismaxlife.com"
+        // },
+        // {
+        //     name: "HDFC Life",
+        //     logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
+        //     href: "https://www.hdfclife.com"
+        // },
+        // {
+        //     name: "Tata AIA Life",
+        //     logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
+        //     href: "https://www.tataaia.com"
+        // },
+        // {
+        //     name: "HDFC Life",
+        //     logoUrl: "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/HDFCLife25Yearslogo-min.png",
+        //     href: "https://www.hdfclife.com"
+        // },
+        // {
+        //     name: "Tata AIA Life",
+        //     logoUrl: "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/new-navigation-icon/Logo.svg",
+        //     href: "https://www.tataaia.com"
+        // }
     ]
 }
 
@@ -149,21 +151,21 @@ export const testimonials = {
         [
             {
                 id: 1,
-                name: "Aisha Khan",
+                name: "Rakhee goel",
                 profession: "Software Engineer",
                 image: "https://i.pravatar.cc/150?u=1",
                 text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
             },
             {
                 id: 2,
-                name: "John Smith",
+                name: "Ashish Aggarwal",
                 profession: "Product Manager",
                 image: "https://i.pravatar.cc/150?u=2",
                 text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
             },
             {
                 id: 3,
-                name: "Sarah Jenkins",
+                name: "Brijesh Goel",
                 profession: "UX Designer",
                 image: "https://i.pravatar.cc/150?u=3",
                 text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
@@ -173,21 +175,21 @@ export const testimonials = {
         [
             {
                 id: 4,
-                name: "Michael Chen",
+                name: "Rajesh Garg",
                 profession: "Data Scientist",
                 image: "https://i.pravatar.cc/150?u=4",
                 text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
             },
             {
                 id: 5,
-                name: "Emily Blunt",
+                name: "Soniya Taneja",
                 profession: "Marketing Lead",
                 image: "https://i.pravatar.cc/150?u=5",
                 text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
             },
             {
                 id: 6,
-                name: "David Wilson",
+                name: "Rakhee goel",
                 profession: "CTO",
                 image: "https://i.pravatar.cc/150?u=6",
                 text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
@@ -197,14 +199,14 @@ export const testimonials = {
         [
             {
                 id: 7,
-                name: "Alice Cooper",
+                name: "Ashish Aggarwal",
                 profession: "DevOps",
                 image: "https://i.pravatar.cc/150?u=7",
                 text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
             },
             {
                 id: 8,
-                name: "Robert Fox",
+                name: "Brijesh Goel",
                 profession: "Designer",
                 image: "https://i.pravatar.cc/150?u=8",
                 text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."

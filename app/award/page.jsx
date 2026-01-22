@@ -3,6 +3,8 @@ import backgroundimage from '@/public/images/backgound.png';
 import { Award, Star, ShieldCheck, Trophy, Landmark, ArrowUpRight } from 'lucide-react';
 import HeroBanner from '../../components/HeroBanner';
 import { awards } from '@/script/data';
+import { about } from '@/script/data';
+import image from '@/public/images/award.jpeg'
 
 // Map icon names to actual components
 const iconMap = {
@@ -106,9 +108,51 @@ export default function Page() {
                         ))}
                     </div>
 
-                 
+
                 </div>
             </section>
+            <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#910606] pl-4">
+                        {about.whoWeAre.heading}
+                    </h2>
+                    {about.whoWeAre.paragraphs.map((para, index) => {
+                        const renderText = () => {
+                            if (para.isBold) {
+                                return <strong>{para.text}</strong>;
+                            }
+                            if (para.highlightText) {
+                                const parts = para.text.split(para.highlightText);
+                                return (
+                                    <>
+                                        {parts[0]}<b>{para.highlightText}</b>{parts[1]}
+                                    </>
+                                );
+                            }
+                            return para.text;
+                        };
+
+                        return (
+                            <p key={index} className="text-gray-700 leading-relaxed mb-5 text-justify">
+                                {renderText()}
+                            </p>
+                        );
+                    })}
+                </div>
+
+                <div className="relative">
+                    <img
+                        src={image.src}
+                        alt={about.whoWeAre.image.alt}
+                        className="rounded-2xl shadow-2xl border border-[#e5d3b3] "
+                    />
+                    {/* <div className="absolute -bottom-6 -left-6 bg-[#910606] text-white px-6 py-3 rounded-lg shadow-lg">
+                                    <p className="text-sm font-medium tracking-wide">
+                                        {about.whoWeAre.image.badge}
+                                    </p>
+                                </div> */}
+                </div>
+            </div>
 
         </div>
     )

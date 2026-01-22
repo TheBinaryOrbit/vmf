@@ -104,7 +104,7 @@ export default function About() {
             </section> */}
 
             {/* FAQ Section - Modern card grid */}
-            <section className="bg-slate-50 py-24 sm:py-32">
+            {/* <section className="bg-slate-50 py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center mb-16">
                         <h2 className="text-base font-semibold leading-7 text-[#910606]">
@@ -129,7 +129,7 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }
