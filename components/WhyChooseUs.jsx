@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"; // something add here 
 import { whyChooseUs } from '@/script/data';
 
 export default function WhyChooseUs() {
