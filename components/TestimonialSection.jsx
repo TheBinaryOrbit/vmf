@@ -31,7 +31,7 @@ const TestimonialSection = () => {
         </div>
 
         {/* Testimonials Grid with Animation */}
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 transition-opacity duration-300 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-4 gap-5 transition-opacity duration-300 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
           {testimonials.pages[currentPage].map((item) => (
             <div key={item.id} className="flex flex-col items-center">
               
@@ -67,7 +67,7 @@ const TestimonialSection = () => {
         </div>
 
         {/* Navigation Dots */}
-        <div className="flex justify-center space-x-4 mt-16">
+        {/* <div className="flex justify-center space-x-4 mt-16">
           {testimonials.pages.map((_, index) => (
             <button
               key={index}
@@ -75,10 +75,10 @@ const TestimonialSection = () => {
               className="group relative flex items-center justify-center w-6 h-6"
               aria-label={`Go to page ${index + 1}`}
             >
-              {/* Outer Ring (Visible when active) */}
+              
               <span className={`absolute inset-0 rounded-full border-2 border-[#910606] transition-transform duration-300 ${currentPage === index ? 'scale-100' : 'scale-0'}`}></span>
               
-              {/* Inner Dot */}
+              
               <span className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 currentPage === index 
                 ? "bg-[#910606]" 
@@ -86,7 +86,7 @@ const TestimonialSection = () => {
               }`}></span>
             </button>
           ))}
-        </div>
+        </div> */}
 
       </div>
     </section>
