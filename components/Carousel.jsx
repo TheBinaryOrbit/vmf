@@ -30,11 +30,11 @@ export default function Carousel({ images = [], interval = 3000 }) {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
-
+  
                 <Image
                     src={images[current]}
                     alt={`Slide ${current + 1}`}
-                    className="object-cover w-full h-full transition-all duration-700 ease-in-out animate-fade"
+                    className="object-fit w-full h-full transition-all duration-700 ease-in-out animate-fade"
                     style={{ aspectRatio: '16/7' }}
                 />
 

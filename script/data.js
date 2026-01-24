@@ -10,7 +10,7 @@ export const home = {
         text: "Book a Free Consultation →",
         link: "#contact"
     },
-    founder: {
+    founder: { 
         name: "Rekha Gupta",
         title: "FOUNDER, V M FINANCIAL SERVICES"
     },
@@ -167,82 +167,111 @@ export const testimonials = {
                 id: 3,
                 name: "Brijesh Goel",
                 profession: "UX Designer",
-                image: "https://i.pravatar.cc/150?u=3",
+                image: "https://i.pravatar.cc/150?u=6",
+                text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
+            },
+             {
+                id: 4,
+                name: "Brijesh Goel",
+                profession: "UX Designer",
+                image: "https://i.pravatar.cc/150?u=4",
                 text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
             }
         ],
         // Page 2
-        [
-            {
-                id: 4,
-                name: "Rajesh Garg",
-                profession: "Data Scientist",
-                image: "https://i.pravatar.cc/150?u=4",
-                text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
-            },
-            {
-                id: 5,
-                name: "Soniya Taneja",
-                profession: "Marketing Lead",
-                image: "https://i.pravatar.cc/150?u=5",
-                text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
-            },
-            {
-                id: 6,
-                name: "Rakhee goel",
-                profession: "CTO",
-                image: "https://i.pravatar.cc/150?u=6",
-                text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
-            }
-        ],
-        // Page 3
-        [
-            {
-                id: 7,
-                name: "Ashish Aggarwal",
-                profession: "DevOps",
-                image: "https://i.pravatar.cc/150?u=7",
-                text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
-            },
-            {
-                id: 8,
-                name: "Brijesh Goel",
-                profession: "Designer",
-                image: "https://i.pravatar.cc/150?u=8",
-                text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
-            },
-            {
-                id: 9,
-                name: "Sonia Gupta",
-                profession: "Founder",
-                image: "https://i.pravatar.cc/150?u=9",
-                text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
-            }
-        ],
-        // Page 4
-        [
-            {
-                id: 10,
-                name: "Tom Hardy",
-                profession: "Sales",
-                image: "https://i.pravatar.cc/150?u=10",
-                text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo."
-            },
-            {
-                id: 11,
-                name: "Lucy Liu",
-                profession: "Operations",
-                image: "https://i.pravatar.cc/150?u=11",
-                text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo."
-            },
-            {
-                id: 12,
-                name: "Kevin Hart",
-                profession: "HR",
-                image: "https://i.pravatar.cc/150?u=12",
-                text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo."
-            }
-        ]
+        // [
+        //     {
+        //         id: 5,
+        //         name: "Rajesh Garg",
+        //         profession: "Data Scientist",
+        //         image: "https://i.pravatar.cc/150?u=4",
+        //         text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
+        //     },
+        //     {
+        //         id: 6,
+        //         name: "Soniya Taneja",
+        //         profession: "Marketing Lead",
+        //         image: "https://i.pravatar.cc/150?u=5",
+        //         text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
+        //     },
+        //     {
+        //         id: 7,
+        //         name: "Rakhee goel",
+        //         profession: "CTO",
+        //         image: "https://i.pravatar.cc/150?u=6",
+        //         text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
+        //     },
+        //      {
+        //         id: 8,
+        //         name: "Rakhee goel",
+        //         profession: "CTO",
+        //         image: "https://i.pravatar.cc/150?u=6",
+        //         text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
+        //     }
+
+        // ],
+        // // Page 3
+        // [
+        //     {
+        //         id: 9,
+        //         name: "Ashish Aggarwal",
+        //         profession: "DevOps",
+        //         image: "https://i.pravatar.cc/150?u=7",
+        //         text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
+        //     },
+        //     {
+        //         id: 10,
+        //         name: "Brijesh Goel",
+        //         profession: "Designer",
+        //         image: "https://i.pravatar.cc/150?u=8",
+        //         text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
+        //     },
+        //     {
+        //         id: 11,
+        //         name: "Sonia Gupta",
+        //         profession: "Founder",
+        //         image: "https://i.pravatar.cc/150?u=9",
+        //         text: "Sanctus sea sed eirmod amet. Takimata kasd sea et et gubergren sanctus duo. Tempor gubergren magna invidunt et sit accusam invidunt."
+        //     },
+        //      {
+        //         id: 12,
+        //         name: "Rakhee goel",
+        //         profession: "CTO",
+        //         image: "https://i.pravatar.cc/150?u=6",
+        //         text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
+        //     }
+        // ],
+        // // Page 4
+        // [
+        //     {
+        //         id: 13,
+        //         name: "Tom Hardy",
+        //         profession: "Sales",
+        //         image: "https://i.pravatar.cc/150?u=6",
+        //         text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo."
+        //     },
+        //     {
+        //         id: 14,
+        //         name: "Lucy Liu",
+        //         profession: "Operations",
+        //         image: "https://i.pravatar.cc/150?u=11",
+        //         text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo."
+        //     },
+        //     {
+        //         id: 15,
+        //         name: "Kevin Hart",
+        //         profession: "HR",
+        //         image: "https://i.pravatar.cc/150?u=12",
+        //         text: "Justo et et invidunt diam gubergren consetetur. Eirmod erat amet rebum ea duo consetetur sed. Sadipscing et amet lorem diam duo."
+        //     },
+        //      {
+        //         id: 16,
+        //         name: "Rakhee goel",
+        //         profession: "CTO",
+        //         image: "https://i.pravatar.cc/150?u=6",
+        //         text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam sea. Accusam kasd sed sea gubergren et stet amet lorem gubergren clita."
+        //     }
+        // ]
     ]
 }
 
@@ -283,6 +312,82 @@ export const contact = {
             note: "(Consultations available by prior appointment)"
         }
     }
+}
+
+export const award = {
+
+     hero: {
+        pretitle: "Get in Touch",
+        title: {
+            main: "About",
+            highlight: "Us"
+        },
+        description: "Have questions? Reach out to us and our team will get back to you shortly.",
+        backgroundImage: '@/public/images/backgound.png'
+    },
+    whoWeAre: {
+        heading: "Who We Are",
+        paragraphs: [
+            {
+                text: "At V M Financial Services, we believe that financial security is not just about policies and plans — it's about protecting lives, dreams, and peace of mind.",
+                isBold: true
+            },
+            {
+                text: "Founded in 2016, our journey began with a simple yet powerful purpose: to help families feel confident about their future. Over the years, we have worked closely with individuals, families, and professionals who wanted clarity, honesty, and guidance in an otherwise complex financial world.",
+                highlightText: "Founded in 2016"
+            },
+            {
+                text: "Many people delay insurance decisions due to lack of awareness, fear of commitment, or confusion caused by too many options. We exist to change that. Our approach is rooted in education first — we help you understand before you decide. Every recommendation is carefully crafted after understanding your goals, budget, family responsibilities, and long-term aspirations.",
+                highlightText: "education first"
+            },
+            {
+                text: "What sets us apart is our commitment to customized solutions. We do not believe in one-size-fits-all planning. Whether it's life insurance, health coverage, or general insurance, our focus is always on minimum investment with maximum protection, ensuring your loved ones remain financially secure even in unforeseen situations.",
+                highlightText: "customized solutions"
+            },
+            {
+                text: "At V M Financial Services, relationships matter more than transactions. We aim to be your long-term financial partner, supporting you through every life stage — from starting your career and building a family to planning retirement with confidence. Transparency, trust, and reliability form the foundation of everything we do.",
+                highlightText: "long-term financial partner"
+            }
+        ],
+        image: {
+            src: '@/public/images/backgound.png',
+            alt: "V M Financial Services office",
+            badge: "15+ Years of Legal Excellence"
+        }
+    },
+    vision: {
+        heading: "Our Vision",
+        text: "To create awareness about the importance of insurance and financial protection, and help more families secure their future through smart, customized planning."
+    },
+    mission: {
+        heading: "Our Mission",
+        text: "To become a trusted lifelong financial partner for families, ensuring minimum investment with maximum protection, peace of mind, and long-term security."
+    },
+    faq: {
+        badge: "Have Questions?",
+        heading: "Frequently Asked Questions",
+        description: "Find answers to common questions about admissions, programs, and campus life.",
+        questions: [
+            {
+                question: "What are the admission requirements?",
+                answer: "Admission requirements vary by program. Generally, for B.Sc. Nursing, candidates must have completed 10+2 with Physics, Chemistry, and Biology with a minimum of 50% marks. For detailed requirements, please visit our Admissions page."
+            },
+            {
+                question: "When do admissions open?",
+                answer: "Admissions typically open in June each year. The application deadline is usually in mid-July, with entrance examinations conducted in late July. We recommend applying early as seats are limited."
+            },
+            {
+                question: "Are scholarships available?",
+                answer: "Yes, we offer merit-based and need-based scholarships. Additionally, students can apply for various government scholarship schemes. For more information, please visit our Fee Structure page."
+            },
+            {
+                question: "Is hostel accommodation available?",
+                answer: "Yes, we provide separate hostel facilities for male and female students. Hostel accommodation is optional and allocated on a first-come, first-served basis. The hostel fee is separate from the tuition fee."
+            }
+        ]
+    }
+
+
 }
 
 export const about = {
