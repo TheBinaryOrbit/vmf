@@ -1,9 +1,12 @@
 
+import { createMetadata } from "@/config/seo";
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import backgroundimage from '@/public/images/backgound.png';
 import HeroBanner from '../../components/HeroBanner';
 import { about } from '@/script/data';
 import image from '@/public/images/slider1.jpeg'
+
+export const metadata = createMetadata("about");
 
 export default function About() {
     return (

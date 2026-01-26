@@ -1,4 +1,5 @@
 
+import { createMetadata } from "@/config/seo";
 import backgroundimage from '@/public/images/backgound.png';
 import { Award, Star, ShieldCheck, Trophy, Landmark, ArrowUpRight } from 'lucide-react';
 import HeroBanner from '../../components/HeroBanner';
@@ -8,6 +9,8 @@ import {award} from '@/script/data';
 import image from '@/public/images/award.jpeg'
 import image2 from '@/public/images/award2.jpeg'
 import Carousel from '@/components/Carousel';
+
+export const metadata = createMetadata("award");
 
 const aboutImage = [image, image2];
 
