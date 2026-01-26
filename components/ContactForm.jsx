@@ -52,7 +52,7 @@ const ContactFrom = () => {
     >
       {/* Left: Form */}
       <div className="w-full" data-aos="fade-right">
-        <p className="text-[#910606] mb-6 md:text-left text-center font-bold text-2xl">
+        <p className="text-primary mb-6 md:text-left text-center font-bold text-2xl">
           Send us a message
         </p>
 
@@ -72,7 +72,7 @@ const ContactFrom = () => {
               name="name"
               required
               disabled={isLoading}
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#164972] focus:border-[#164972] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-secondary focus:border-secondary disabled:opacity-50 disabled:cursor-not-allowed"
             />
           </div>
 
@@ -87,7 +87,7 @@ const ContactFrom = () => {
                 name="phone"
                 required
                 disabled={isLoading}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#164972] focus:border-[#164972] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-secondary focus:border-secondary disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
             <div>
@@ -99,7 +99,7 @@ const ContactFrom = () => {
                 name="email"
                 required
                 disabled={isLoading}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#164972] focus:border-[#164972] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-secondary focus:border-secondary disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
           </div>
@@ -114,7 +114,7 @@ const ContactFrom = () => {
               name="title"
               required
               disabled={isLoading}
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#164972] focus:border-[#164972] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-secondary focus:border-secondary disabled:opacity-50 disabled:cursor-not-allowed"
             />
           </div>
 
@@ -127,7 +127,7 @@ const ContactFrom = () => {
               name="message"
               required
               disabled={isLoading}
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm h-32 focus:ring-2 focus:ring-[#164972] focus:border-[#164972] disabled:opacity-50 disabled:cursor-not-allowed resize-none"
+              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm h-32 focus:ring-2 focus:ring-secondary focus:border-secondary disabled:opacity-50 disabled:cursor-not-allowed resize-none"
             ></textarea>
           </div>
 
@@ -138,7 +138,7 @@ const ContactFrom = () => {
             className={`w-full py-3 text-white rounded-xl font-bold font-lora transition-all duration-300 flex items-center justify-center gap-2 ${
               isLoading 
                 ? 'bg-gray-400 cursor-not-allowed' 
-                : 'bg-[#910606] hover:bg-[#7a0505] hover:shadow-2xl hover:scale-[1.01] cursor-pointer'
+                : 'bg-primary hover:bg-primary-dark hover:shadow-2xl hover:scale-[1.01] cursor-pointer'
             }`}
           >
             {isLoading && (

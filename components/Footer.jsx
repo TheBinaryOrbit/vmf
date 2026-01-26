@@ -6,7 +6,7 @@ import { footer } from '@/script/data';
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#7a0505] rounded-t-3xl h-fit p-5">
+        <footer className="w-full bg-primary-dark rounded-t-3xl h-fit p-5">
             <div className="max-w-7xl mx-auto">
                 <div className='flex flex-col md:flex-row justify-between items-center mb-10 text-center md:text-left'>
                     {/* <Image src={img} alt="img" className='w-32' /> */}

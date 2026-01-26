@@ -40,7 +40,7 @@ export default function Page() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary tracking-wide uppercase text-[#910606]">
+          <p className="text-sm font-medium text-primary tracking-wide uppercase text-primary">
             {services.pageHeader.badge}
           </p>
           <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">
@@ -61,11 +61,11 @@ export default function Page() {
                 onClick={() => setActiveTab(service)}
                 className={`w-full h-25 flex items-center gap-4 p-5 rounded-xl transition-all duration-300 border text-lg font-semibold ${
                   activeTab.id === service.id
-                    ? "bg-[#910606] text-white border-[#910606] text-xl shadow-lg shadow-[#910606]/30 scale-[1.02]"
-                    : "bg-white text-slate-700 border-red-100 hover:border-[#910606]/30"
+                    ? "bg-primary text-white border-primary text-xl shadow-lg shadow-primary/30 scale-[1.02]"
+                    : "bg-white text-slate-700 border-red-100 hover:border-primary/30"
                 }`}
               >
-                <span className={activeTab.id === service.id ? "text-white" : "text-[#910606]"}>
+                <span className={activeTab.id === service.id ? "text-white" : "text-primary"}>
                   {service.tabIcon}
                 </span>
                 {service.title}
@@ -110,7 +110,7 @@ export default function Page() {
                     {activeTab.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-3 text-slate-700 font-semibold">
                         <div className="bg-red-100 p-1 rounded-full">
-                          <Check className="w-4 h-4 text-[#910606]" />
+                          <Check className="w-4 h-4 text-primary" />
                         </div>
                         {feature}
                       </div>
@@ -123,7 +123,7 @@ export default function Page() {
                         sessionStorage.setItem('selectedService', JSON.stringify(activeTab.intId));
                       } catch (e) { }
                     }}
-                    className="text-[#910606] text-md duration-300 rounded font-semibold mb-10 hover:text-[#910606df] transition-all cursor-pointer text-start"
+                    className="text-primary text-md duration-300 rounded font-semibold mb-10 hover:text-primary/80 transition-all cursor-pointer text-start"
                   >
                     Learn More &rarr;
                   </Link>

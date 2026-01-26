@@ -7,15 +7,15 @@ const slider1 = require('@/public/images/slider1.jpeg');
 function HomeAboutUs() {
   return (
     <section className="bg-white">
-      <section id="about-us" className="relative py-20 px-4 md:px-0 bg-[#910606] flex justify-center items-center md:rounded-br-[15%] rounded-tl-0 rounded-br-0">
+      <section id="about-us" className="relative py-20 px-4 md:px-0 bg-primary flex justify-center items-center md:rounded-br-[15%] rounded-tl-0 rounded-br-0">
         <div className="max-w-7xl w-full mx-auto bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden">
           <div className="flex-1 p-10 flex flex-col justify-center">
             {/* Header Section */}
             <h3 className="uppercase text-[#23293a] font-bold tracking-widest text-lg mb-2">{homeAbout.toptitle}</h3>
-            <p className="text-[#910606] font-semibold text-sm tracking-wide mb-4 uppercase">
-              {homeAbout.subtitle}
+            <p className="text-primary font-semibold text-sm tracking-wide mb-4 uppercase">
+                {homeAbout.toptitle}
             </p>
-            <div className="w-12 h-1 bg-[#910606] mb-6" />
+            <div className="w-12 h-1 bg-primary mb-6" />
 
             {/* Content Section */}
             <div className="text-[#000000] text-lg leading-relaxed mb-6 space-y-4">
@@ -25,7 +25,7 @@ function HomeAboutUs() {
               <p>
                 {homeAbout.description2}
               </p>
-              <blockquote className="italic border-l-4 border-[#910606] pl-4 text-gray-700 py-2">
+              <blockquote className="italic border-l-4 border-primary pl-4 text-gray-700 py-2">
                 {homeAbout.quote}
               </blockquote>
             </div>
@@ -40,7 +40,7 @@ function HomeAboutUs() {
               </span>
             </div>
 
-            <Link href={homeAbout.button.link} className="text-[#910606] text-xl hover:translate-x-2 duration-300 rounded font-semibold transition-all cursor-pointer text-start mt-4"  
+            <Link href={homeAbout.button.link} className="text-primary text-xl hover:translate-x-2 duration-300 rounded font-semibold transition-all cursor-pointer text-start mt-4"  
             >
               {homeAbout.button.text}
             </Link>

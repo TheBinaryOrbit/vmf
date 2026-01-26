@@ -52,14 +52,14 @@ function Navbar() {
     after:bottom-0 
     after:w-full 
     after:h-[2px] 
-    after:bg-[#910606] 
+    after:bg-primary 
     after:scale-x-0 
     after:origin-left 
     after:transition-transform 
     after:duration-300 
     after:ease-out
     hover:after:scale-x-100
-    text-[#740404]
+    text-primary-darker
   `;
 
     const handleContactClick = (e) => {
@@ -77,10 +77,10 @@ function Navbar() {
     return (
         <nav className="sticky top-0 z-[100] bg-white sm:pl-16 px-6 py-3 flex items-center justify-between shadow-md">
             {/* Progress track */}
-            <div className="pointer-events-none absolute left-0 bottom-0 h-[2px] w-full bg-[#910606]/20" />
+            <div className="pointer-events-none absolute left-0 bottom-0 h-[2px] w-full bg-primary/20" />
             {/* Progress bar */}
             <div
-                className="pointer-events-none absolute left-0 bottom-0 h-[2px] bg-[#910606]"
+                className="pointer-events-none absolute left-0 bottom-0 h-[2px] bg-primary"
                 style={{ width: `${progress * 100}%` }}
             />
 
@@ -115,15 +115,15 @@ function Navbar() {
 
             >
                 <span
-                    className={`block w-6 h-0.5 bg-[#740404] mb-1 transition-all ${open ? "rotate-45 translate-y-2" : ""
+                    className={`block w-6 h-0.5 bg-primary-darker mb-1 transition-all ${open ? "rotate-45 translate-y-2" : ""
                         }`}
                 />
                 <span
-                    className={`block w-6 h-0.5 bg-[#740404] mb-1 transition-all ${open ? "opacity-0" : ""
+                    className={`block w-6 h-0.5 bg-primary-darker mb-1 transition-all ${open ? "opacity-0" : ""
                         }`}
                 />
                 <span
-                    className={`block w-6 h-0.5 bg-[#740404] transition-all ${open ? "-rotate-45 -translate-y-2" : ""
+                    className={`block w-6 h-0.5 bg-primary-darker transition-all ${open ? "-rotate-45 -translate-y-2" : ""
                         }`}
                 />
             </button>

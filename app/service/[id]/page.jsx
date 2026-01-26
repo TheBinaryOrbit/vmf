@@ -45,7 +45,7 @@ function ServiceDetails() {
         <p className="text-xl font-medium">No service selected.</p>
         <button 
           onClick={() => window.history.back()}
-          className="mt-4 text-[#910606] hover:underline flex items-center gap-2"
+          className="mt-4 text-primary hover:underline flex items-center gap-2"
         >
           <ArrowLeft size={18} /> Go back to services
         </button>
@@ -56,7 +56,7 @@ function ServiceDetails() {
   return (
   <div className="bg-gray-50 min-h-screen pb-20">
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <button onClick={() => window.history.back()} className="flex items-center gap-2 text-gray-600 hover:text-[#910606] mb-8 group">
+      <button onClick={() => window.history.back()} className="flex items-center gap-2 text-gray-600 hover:text-primary mb-8 group">
         <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
         <span className="font-medium">Back to Services</span>
       </button>
@@ -68,7 +68,7 @@ function ServiceDetails() {
             <img src={service.image} alt={service.title} className="w-full object-cover h-[500px]" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           </div>
-          <div className="absolute -bottom-6 -right-6 bg-[#910606] text-white p-6 rounded-xl shadow-xl">
+          <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-xl">
             <p className="text-sm uppercase tracking-widest opacity-80">Protection Plan</p>
             <p className="text-xl font-bold">{service.title}</p>
           </div>
@@ -80,7 +80,7 @@ function ServiceDetails() {
             <h1 className="text-4xl md:text-5xl font-extrabold text-[#23293a] leading-tight mb-4">
               {service.pageHeader || service.title}
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed italic border-l-4 border-[#910606] pl-4">
+            <p className="text-lg text-gray-600 leading-relaxed italic border-l-4 border-primary pl-4">
               {service.detailedDesc}
             </p>
           </header>
@@ -96,7 +96,7 @@ function ServiceDetails() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {service.sectionItems?.map((item, i) => (
                 <div key={i} className="flex items-center gap-3 bg-gray-100 p-3 rounded-lg">
-                  <div className="w-2 h-2 rounded-full bg-[#910606]" />
+                  <div className="w-2 h-2 rounded-full bg-primary" />
                   <span className="text-sm font-medium text-gray-700">{item}</span>
                 </div>
               ))}
@@ -104,7 +104,7 @@ function ServiceDetails() {
           </section>
 
           {/* Benefits List */}
-          <div className="bg-[#910606] p-8 rounded-2xl text-white shadow-lg">
+          <div className="bg-primary p-8 rounded-2xl text-white shadow-lg">
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
               Our Promise & Benefits
             </h3>

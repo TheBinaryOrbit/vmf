@@ -24,7 +24,7 @@ const TestimonialSection = () => {
         
         {/* Header Section */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 border border-[#910606]/40 text-[#910606] rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
+          <span className="inline-block px-4 py-1 border border-primary/40 text-primary rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
             {testimonials.badge}
           </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">{testimonials.heading}</h2>
@@ -36,10 +36,10 @@ const TestimonialSection = () => {
             <div key={item.id} className="flex flex-col items-center">
               
               {/* The Bubble */}
-              <div className="relative bg-white border border-[#910606]/20 rounded-lg p-8 mb-10 shadow-sm hover:shadow-md transition-shadow">
+              <div className="relative bg-white min-h-64 border border-primary/20 rounded-lg p-8 mb-10 shadow-sm hover:shadow-md transition-shadow">
                 {/* Quote Icon */}
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white p-2 rounded-full border border-[#910606]/20">
-                  <Quote className="w-8 h-8 text-[#910606] fill-[#910606]" />
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white p-2 rounded-full border border-primary/20">
+                  <Quote className="w-8 h-8 text-primary fill-primary" />
                 </div>
                 
                 <p className="text-gray-500 text-center leading-relaxed">
@@ -47,7 +47,7 @@ const TestimonialSection = () => {
                 </p>
 
                 {/* Bubble Tip */}
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-6 h-6 bg-white border-r border-b border-[#910606]/20 rotate-45"></div>
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-6 h-6 bg-white border-r border-b border-primary/20 rotate-45"></div>
               </div>
 
               {/* User Profile */}
@@ -76,13 +76,13 @@ const TestimonialSection = () => {
               aria-label={`Go to page ${index + 1}`}
             >
               
-              <span className={`absolute inset-0 rounded-full border-2 border-[#910606] transition-transform duration-300 ${currentPage === index ? 'scale-100' : 'scale-0'}`}></span>
+              <span className={`absolute inset-0 rounded-full border-2 border-primary transition-transform duration-300 ${currentPage === index ? 'scale-100' : 'scale-0'}`}></span>
               
               
               <span className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 currentPage === index 
-                ? "bg-[#910606]" 
-                : "bg-[#910606]/40 group-hover:bg-[#910606]/30"
+                ? "bg-primary" 
+                : "bg-primary/40 group-hover:bg-primary/30"
               }`}></span>
             </button>
           ))}

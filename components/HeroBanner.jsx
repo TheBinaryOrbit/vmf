@@ -21,7 +21,7 @@ export default function HeroBanner({ pretitle = '', title = '', description = ''
             <div className="relative z-10 px-6 h-full flex items-center justify-center">
                 <div className="mx-auto max-w-4xl text-center text-white">
                     {pretitle ? (
-                        <div className="mb-8 inline-flex items-center rounded-full bg-red-100/90 px-4 py-2 text-sm font-medium text-[#164972] ring-1 ring-red-300">
+                        <div className="mb-8 inline-flex items-center rounded-full bg-red-100/90 px-4 py-2 text-sm font-medium text-secondary ring-1 ring-red-300">
                             {pretitle}
                         </div>
                     ) : null}

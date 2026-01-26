@@ -45,10 +45,10 @@ export default function Page() {
                     {/* Section Header */}
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
                         <div className="max-w-2xl">
-                            <h2 className="text-[#910606] font-bold tracking-widest text-sm mb-3">{awards.section.badge}</h2>
+                            <h2 className="text-primary font-bold tracking-widest text-sm mb-3">{awards.section.badge}</h2>
                             <h3 className="text-4xl md:text-5xl font-black text-[#001d3d]">
                                 {awards.section.heading} <br />
-                                <span className="text-transparent bg-clip-text bg-[#910606]">
+                                <span className="text-transparent bg-clip-text bg-primary">
                                     {awards.section.highlightedText}
                                 </span>
                             </h3>
@@ -56,8 +56,8 @@ export default function Page() {
                         <div className="hidden md:block">
                             <div className="flex -space-x-3">
                                 {[1, 2, 3, 4].map((i) => (
-                                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white bg-[#910606]/10 flex items-center justify-center">
-                                        <Star className="w-5 h-5 text-[#910606] fill-[#910606]" />
+                                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white bg-primary/10 flex items-center justify-center">
+                                        <Star className="w-5 h-5 text-primary fill-primary" />
                                     </div>
                                 ))}
                                 <div className="w-12 h-12 rounded-full border-4 border-white bg-[#001d3d] flex items-center justify-center text-white text-xs font-bold">
@@ -73,7 +73,7 @@ export default function Page() {
                         {achievements.map((item, index) => (
                             <div
                                 key={index}
-                                className={`group relative bg-white rounded-[2.5rem] p-10 border border-gray-100 transition-all duration-500 overflow-hidden ${item.border} hover:shadow-2xl hover:shadow-[#910606]/10/50`}
+                                className={`group relative bg-white rounded-[2.5rem] p-10 border border-gray-100 transition-all duration-500 overflow-hidden ${item.border} hover:shadow-2xl hover:shadow-primary/10/50`}
                             >
                                 {/* Decorative Background Gradient */}
                                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${item.bg} rounded-bl-[5rem] -z-0 transition-transform group-hover:scale-150 duration-700`}></div>
@@ -89,14 +89,14 @@ export default function Page() {
                                         {item.icon}
                                     </div>
 
-                                    <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-[10px] font-bold tracking-widest text-gray-500 mb-4 group-hover:bg-[#910606] group-hover:text-white transition-colors">
+                                    <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-[10px] font-bold tracking-widest text-gray-500 mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
                                         {item.badge}
                                     </div>
 
                                     <h4 className="text-2xl font-black text-[#001d3d] mb-1">
                                         {item.title}
                                     </h4>
-                                    <p className="text-[#910606] font-bold text-sm mb-6">
+                                    <p className="text-primary font-bold text-sm mb-6">
                                         {item.subtitle}
                                     </p>
 
@@ -106,7 +106,7 @@ export default function Page() {
 
                                     <div className="mt-8 pt-8 border-t border-gray-50 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0">
                                         <span className="text-xs font-bold text-[#001d3d]">Official Recognition</span>
-                                        <ArrowUpRight className="w-5 h-5 text-[#910606]" />
+                                        <ArrowUpRight className="w-5 h-5 text-primary" />
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ export default function Page() {
             </section>
             <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#910606] pl-4">
+                    <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-primary pl-4">
                         {about.whoWeAre.heading}
                     </h2>
                     {about.whoWeAre.paragraphs.map((para, index) => {
@@ -173,7 +173,7 @@ export default function Page() {
                                 </div> */}
                 </div>
                 <div>
-                    <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#910606] pl-4">
+                    <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-primary pl-4">
                         {award.whoWeAre.heading}
                     </h2>
                     {award.whoWeAre.paragraphs.map((para, index) => {

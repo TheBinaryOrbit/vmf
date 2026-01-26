@@ -9,7 +9,7 @@ export default function Brand() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
                     {/* Header Section */}
                     <div className="mb-14 text-center">
-                        <span className="inline-block px-4 py-1 border border-[#910606]/40 text-[#910606] rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
+                        <span className="inline-block px-4 py-1 border border-primary/40 text-primary rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
                             {brands.badge}
           </span>
                         <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">

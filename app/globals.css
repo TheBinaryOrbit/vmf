@@ -1,6 +1,72 @@
 @import "tailwindcss";
 
+/* ============================================
+   CENTRAL COLOR THEME CONFIGURATION
+   ============================================ */
+
+:root {
+  /* Primary Colors - Main brand color (dark red) */
+  --color-primary: #910606;
+  --color-primary-dark: #7a0505;
+  --color-primary-darker: #740404;
+  --color-primary-light: #ff6b6b;
+
+  /* Secondary Colors - Accent color (dark blue) */
+  --color-secondary: #164972;
+  --color-secondary-light: #1e5a96;
+
+  /* Neutral/Background Colors */
+  --color-background-light: #f8fafc;
+  --color-background-white: #ffffff;
+  --color-background-dark: #001d3d;
+  
+  /* Text Colors */
+  --color-text-primary: #001d3d;
+  --color-text-secondary: #23293a;
+  --color-text-light: #575757;
+  --color-text-muted: #7a7a7a;
+
+  /* Semantic Colors */
+  --color-red-50: #fee2e2;
+  --color-red-100: #fecaca;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Border & Shadow Colors */
+  --color-border-light: #e5e7eb;
+  --color-border-dark: #d1d5db;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
 
 html {
   scroll-behavior: smooth;
+}
+
+/* ============================================
+   UTILITY CLASSES USING CSS VARIABLES
+   ============================================ */
+
+.bg-primary {
+  @apply bg-[#910606];
+}
+
+.bg-primary-dark {
+  @apply bg-[#7a0505];
+}
+
+.text-primary {
+  @apply text-[#910606];
+}
+
+.text-secondary {
+  @apply text-[#164972];
+}
+
+.border-primary {
+  @apply border-[#910606];
+}
+
+.ring-primary {
+  @apply ring-[#910606];
 }

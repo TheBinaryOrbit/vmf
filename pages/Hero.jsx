@@ -25,7 +25,7 @@ function HeroSection() {
     };
 
     return (
-        <section className="w-full bg-[#910606]">
+        <section className="w-full bg-primary">
             <section className='rounded-br-0 md:rounded-br-[15%] bg-white overflow-hidden'>
                 <section className='flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-10 px-6 py-10 sm:py-20 md:px-30 md:py-8 relative min-h-[500px] mt-0 md:mt-0 bg-white overflow-hidden shape-wavy-br-hero mb-20 '>
                     <div className="flex-1 flex items-center w-full sm:w-[50%] justify-center h-[400px] md:h-[500px] mt-0 md:mt-12">
@@ -64,7 +64,7 @@ function HeroSection() {
                             </h1>
 
                             {/* Sub-headline */}
-                            <h2 className="text-xl font-semibold text-[#910606] mb-4">
+                            <h2 className="text-xl font-semibold text-primary mb-4">
                                 {home.subheading}
                             </h2>
 
@@ -75,7 +75,7 @@ function HeroSection() {
 
                             {/* Call to Action Button */}
                             <button
-                                className="bg-[#910606] text-white px-7 py-3 rounded font-semibold mb-10 shadow hover:bg-[#910606df] transition-all cursor-pointer"
+                                className="bg-primary text-white px-7 py-3 rounded font-semibold mb-10 shadow hover:bg-primary/80 transition-all cursor-pointer"
                             >
                                 <a href={home.button.link}>{home.button.text}</a>
                             </button>
