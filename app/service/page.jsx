@@ -14,7 +14,6 @@ import {
 } from 'lucide-react';
 import { services } from '@/script/data';
 
-export const metadata = { title: "Our Services - V M FINANCIAL SERVICES", description: "Explore our comprehensive range of financial services and solutions tailored to your needs." };
 
 // Map icon names to actual components
 const iconMap = {
