@@ -153,29 +153,29 @@ export const testimonials = {
                 id: 1,
                 name: "Rakhee goel",
                 profession: "Software Engineer",
-                image: "https://i.pravatar.cc/150?u=1",
-                text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
+                image: "https://png.pngtree.com/png-clipart/20240531/original/pngtree-women-flat-avatar-vector-png-image_15218329.png",
+                text: "The policy purchase process was simple and transparent. The team clearly explained coverage details and helped me choose a plan that fit my family’s needs. Claim support was quick and hassle-free."
             },
             {
                 id: 2,
                 name: "Ashish Aggarwal",
                 profession: "Product Manager",
-                image: "https://i.pravatar.cc/150?u=2",
-                text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
+                image: "https://img.freepik.com/premium-vector/flat-illustration-boy-with-hairstyle-purple-shirt_981536-1545.jpg",
+                text: "Excellent customer service and clear communication throughout. I especially appreciated the timely updates during my claim process. It really gave me peace of mind during a stressful time."
             },
             {
                 id: 3,
                 name: "Brijesh Goel",
                 profession: "UX Designer",
-                image: "https://i.pravatar.cc/150?u=6",
-                text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
+                image: "https://img.freepik.com/premium-vector/flat-illustration-men-wearing-jacket-brown-black-color-combination_981536-1552.jpg",
+                text: "What stood out was their professionalism and quick response time. From onboarding to claim settlement, everything was smooth and well-organized. Highly recommend their insurance services."
             },
              {
                 id: 4,
-                name: "Brijesh Goel",
-                profession: "UX Designer",
-                image: "https://i.pravatar.cc/150?u=4",
-                text: "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat."
+                name: "Yaman Saini",
+                profession: "Director",
+                image: "https://img.freepik.com/premium-vector/young-boy-had-vector-illustration-ai-generated-by-recraft-boy-had-short-icon-logo-vector_1242038-558.jpg?semt=ais_hybrid&w=740&q=80",
+                text: "A reliable insurance partner with strong coverage options and transparent policies. Their support team handled our claim efficiently and kept us informed at every step."
             }
         ],
         // Page 2
