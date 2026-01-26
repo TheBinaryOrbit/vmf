@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import logo from '@/public/images/logo.png';
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
     const [open, setOpen] = useState(false);
@@ -109,23 +110,15 @@ function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-                className="md:hidden z-50"
+                className="md:hidden z-50 bg-white p-2"
                 onClick={() => setOpen(!open)}
-                aria-label="Open menu"
-
+                aria-label={open ? "Close menu" : "Open menu"}
             >
-                <span
-                    className={`block w-6 h-0.5 bg-primary-darker mb-1 transition-all ${open ? "rotate-45 translate-y-2" : ""
-                        }`}
-                />
-                <span
-                    className={`block w-6 h-0.5 bg-primary-darker mb-1 transition-all ${open ? "opacity-0" : ""
-                        }`}
-                />
-                <span
-                    className={`block w-6 h-0.5 bg-primary-darker transition-all ${open ? "-rotate-45 -translate-y-2" : ""
-                        }`}
-                />
+                {open ? (
+                    <X className="w-6 h-6 text-primary" />
+                ) : (
+                    <Menu className="w-6 h-6 text-primary" />
+                )}
             </button>
 
             {/* Mobile Menu */}
@@ -136,7 +129,7 @@ function Navbar() {
                         onClick={() => setOpen(false)}
                     />
                     <div
-                        className="absolute top-0 right-0 w-2/3 max-w-xs bg-white h-full shadow-lg p-6 flex flex-col gap-6 animate-slide-in  duration-700 pt-20"
+                        className="absolute top-0 right-0 w-2/3 max-w-xs bg-white h-full shadow-lg p-6 flex flex-col gap-6 animate-slide-in duration-700 ease-in-out pt-20"
                         style={{ zIndex: 51 }}
                         onClick={(e) => e.stopPropagation()}
                     >
