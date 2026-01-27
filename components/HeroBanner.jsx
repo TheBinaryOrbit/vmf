@@ -24,7 +24,7 @@ export default function HeroBanner({ pretitle = '', title = '', description = ''
                         {title}
                     </h1>
                     {description ? (
-                        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-red-100">
+                        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-light">
                             {description}
                         </p>
                     ) : null}
