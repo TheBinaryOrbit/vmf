@@ -3,7 +3,7 @@ import { whyChooseUs } from '@/script/data';
 
 export default function WhyChooseUs() {
     return (
-        <section className="py-24 relative xl:mr-0 lg:mr-5 mr-0 bg-white rounded-tl-0 md:rounded-tl-[15%]">
+        <section className="py-24 relative xl:mr-0 lg:mr-5 mr-0 bg-primary-light rounded-tl-0 md:rounded-tl-[15%]">
             <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                 
                 {/* TOP BANNER SECTION */}

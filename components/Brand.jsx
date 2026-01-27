@@ -5,7 +5,7 @@ export default function Brand() {
 
     return (
         <section className="white">
-            <section className="md:py-16 py-12 bg-white md:rounded-br-[15%] rounded-br-0">
+            <section className="md:py-16 py-12 bg-primary-light md:rounded-br-[15%] rounded-br-0">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
                     {/* Header Section */}
                     <div className="mb-14 text-center">
@@ -16,7 +16,7 @@ export default function Brand() {
                             {brands.heading}
                         </h2>
                     </div>
-
+        
                     {/* Brand Grid mapping */}
                     <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-3 xl:grid-cols-5 xl:gap-12">
                         {brands.list.map((brand, index) => (

@@ -37,7 +37,7 @@ export default function Page() {
   const [activeTab, setActiveTab] = useState(servicesData[0]);
   
   return (
-    <div className="min-h-screen bg-white py-20 px-4 md:px-8 rounded-tl-0 md:rounded-tl-[15%]">
+    <div className="min-h-screen bg-primary-light py-20 px-4 md:px-8 rounded-tl-0 md:rounded-tl-[15%]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -63,7 +63,7 @@ export default function Page() {
                 className={`w-full h-25 flex items-center gap-4 p-5 rounded-xl transition-all duration-300 border text-lg font-semibold ${
                   activeTab.id === service.id
                     ? "bg-primary text-white border-primary text-xl shadow-lg shadow-primary/30 scale-[1.02]"
-                    : "bg-white text-slate-700 border-red-100 hover:border-primary/30"
+                    : "bg-primary-light text-slate-700 border-red-100 hover:border-primary/30"
                 }`}
               >
                 <span className={activeTab.id === service.id ? "text-white" : "text-primary"}>
@@ -75,7 +75,7 @@ export default function Page() {
           </div>
 
           {/* Content Area */}
-          <div className="lg:col-span-8 bg-white rounded-3xl p-6 md:p-10 shadow-xl shadow-slate-200/50 border border-slate-50">
+          <div className="lg:col-span-8 bg-primary-light rounded-3xl p-6 md:p-10 shadow-xl shadow-slate-200/50 border border-slate-50">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab.id}

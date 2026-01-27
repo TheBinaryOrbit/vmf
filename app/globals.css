@@ -6,7 +6,7 @@
 
 :root {
   /* Primary Colors - Main brand color (dark red) */
-  --color-primary: #910606;
+  --color-primary: #000000;
   --color-primary-dark: #7a0505;
   --color-primary-darker: #740404;
   --color-primary-light: #ff6b6b;
@@ -55,9 +55,15 @@ html {
   @apply bg-[#7a0505];
 }
 
+.bg-primary-light{
+  @apply bg-white;
+}
+
 .text-primary {
   @apply text-[#910606];
 }
+
+
 
 .text-secondary {
   @apply text-[#164972];

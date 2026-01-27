@@ -4,7 +4,7 @@ import { contact } from '@/script/data'
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-20 bg-white">
+        <section id="contact" className="py-20 bg-primary-light">
             {/* Header Section */}
             <div className="text-center mb-16 px-4">
                 <span className="inline-block px-4 py-1 border border-primary/40 text-primary rounded-md text-sm font-semibold mb-4 bg-red-50/50">
@@ -96,7 +96,7 @@ export default function Contact() {
 
             </div>
 
-            <div className="rounded-[calc(1.5rem-1px)] p-5 sm:p-2 bg-white">
+            <div className="rounded-[calc(1.5rem-1px)] p-5 sm:p-2 bg-primary-light">
                 <ContactFrom />
             </div>
         </section>

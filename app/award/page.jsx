@@ -32,7 +32,7 @@ const achievements = awards.achievements.map(achievement => {
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-primary-light">
 
 
             <HeroBanner
@@ -42,7 +42,7 @@ export default function Page() {
                 backgroundImage={backgroundimage}
             />
 
-            <section className="py-20 bg-white px-6">
+            <section className="py-20 bg-primary-light px-6">
                 <div className="max-w-7xl mx-auto">
 
                     {/* Section Header */}
@@ -76,7 +76,7 @@ export default function Page() {
                         {achievements.map((item, index) => (
                             <div
                                 key={index}
-                                className={`group relative bg-white rounded-[2.5rem] p-10 border border-gray-100 transition-all duration-500 overflow-hidden ${item.border} hover:shadow-2xl hover:shadow-primary/10/50`}
+                                className={`group relative bg-primary-light rounded-[2.5rem] p-10 border border-gray-100 transition-all duration-500 overflow-hidden ${item.border} hover:shadow-2xl hover:shadow-primary/10/50`}
                             >
                                 {/* Decorative Background Gradient */}
                                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${item.bg} rounded-bl-[5rem] -z-0 transition-transform group-hover:scale-150 duration-700`}></div>
@@ -88,7 +88,7 @@ export default function Page() {
 
                                 {/* Content */}
                                 <div className="relative z-10">
-                                    <div className="w-16 h-16 bg-white shadow-lg rounded-2xl flex items-center justify-center mb-8 border border-gray-50 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="w-16 h-16 bg-primary-light shadow-lg rounded-2xl flex items-center justify-center mb-8 border border-gray-50 group-hover:scale-110 transition-transform duration-300">
                                         {item.icon}
                                     </div>
 

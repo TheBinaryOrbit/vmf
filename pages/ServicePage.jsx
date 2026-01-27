@@ -38,14 +38,8 @@ export default function ServicePage() {
   
   return (
     <div className="min-h-screen py-20 px-4 md:px-8 rounded-tl-0 md:rounded-tl-[15%] relative">
-      <div className="absolute inset-0 z-0">
-        {backgroundimage ? (
-          <img
-            src={backgroundimage.src}
-            alt={'Background'}
-            className="h-full w-full object-cover object-center"
-          />
-        ) : null}
+      <div className="absolute inset-0 z-0 bg-primary-dark">
+        
         <div className="absolute inset-0"></div>
       </div>
 
@@ -74,7 +68,7 @@ export default function ServicePage() {
                 className={`w-full h-25 flex items-center gap-4 p-5 rounded-xl transition-all duration-300 border text-lg font-semibold ${
                   activeTab.id === service.id
                     ? "bg-primary text-white border-primary text-xl shadow-lg shadow-primary/30 scale-[1.02]"
-                    : "bg-white text-slate-700 border-red-100 hover:border-primary/30"
+                    : "bg-primary-light text-slate-700 border-red-100 hover:border-primary/30"
                 }`}
               >
                 <span className={activeTab.id === service.id ? "text-white" : "text-primary"}>
@@ -86,7 +80,7 @@ export default function ServicePage() {
           </div>
 
           {/* Content Area */}
-          <div className="lg:col-span-8 bg-white rounded-3xl p-6 md:p-10 shadow-xl shadow-slate-200/50 border border-slate-50">
+          <div className="lg:col-span-8 bg-primary-light rounded-3xl p-6 md:p-10 shadow-xl shadow-slate-200/50 border border-slate-50">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab.id}

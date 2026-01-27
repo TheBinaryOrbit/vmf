@@ -26,8 +26,8 @@ function HeroSection() {
 
     return (
         <section className="w-full bg-primary">
-            <section className='rounded-br-0 md:rounded-br-[15%] bg-white overflow-hidden'>
-                <section className='flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-10 px-6 py-10 sm:py-20 md:px-30 md:py-8 relative min-h-[500px] mt-0 md:mt-0 bg-white overflow-hidden shape-wavy-br-hero mb-20 '>
+            <section className='rounded-br-0 md:rounded-br-[15%] bg-primary-light overflow-hidden'>
+                <section className='flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-10 px-6 py-10 sm:py-20 md:px-30 md:py-8 relative min-h-[500px] mt-0 md:mt-0 bg-primary-light overflow-hidden shape-wavy-br-hero mb-20 '>
                     <div className="flex-1 flex items-center w-full sm:w-[50%] justify-center h-[400px] md:h-[500px] mt-0 md:mt-12">
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full h-full max-w-[800px] max-h-[500px] flex items-center justify-center relative">
                             <button

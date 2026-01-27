@@ -6,9 +6,9 @@ const slider1 = require('@/public/images/slider1.jpeg');
                 
 function HomeAboutUs() {
   return (
-    <section className="bg-white">
+    <section className="bg-primary-light">
       <section id="about-us" className="relative py-20 px-4 md:px-0 bg-primary flex justify-center items-center md:rounded-br-[15%] rounded-tl-0 rounded-br-0">
-        <div className="max-w-7xl w-full mx-auto bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden">
+        <div className="max-w-7xl w-full mx-auto bg-primary-light rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden">
           <div className="flex-1 p-10 flex flex-col justify-center">
             {/* Header Section */}
             <h3 className="uppercase text-[#23293a] font-bold tracking-widest text-lg mb-2">{homeAbout.toptitle}</h3>

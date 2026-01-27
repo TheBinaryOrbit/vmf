@@ -47,7 +47,7 @@ const ContactFrom = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row gap-10 items-center justify-between max-w-7xl mx-auto"
+      className=" flex flex-col lg:flex-row gap-10 items-center justify-between max-w-7xl mx-auto"
       id="contact"
     >
       {/* Left: Form */}

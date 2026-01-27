@@ -19,7 +19,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-10 px-4 bg-white">
+    <section className="py-10 px-4 bg-primary-light">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}

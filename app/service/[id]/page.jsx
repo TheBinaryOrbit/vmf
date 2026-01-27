@@ -54,7 +54,7 @@ function ServiceDetails() {
   }
 
   return (
-  <div className="bg-gray-50 min-h-screen pb-20">
+  <div className="bg-primary-light min-h-screen pb-20">
     <div className="max-w-6xl mx-auto px-4 py-8">
       <button onClick={() => window.history.back()} className="flex items-center gap-2 text-gray-600 hover:text-primary mb-8 group">
         <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
@@ -84,8 +84,7 @@ function ServiceDetails() {
               {service.detailedDesc}
             </p>
           </header>
-
-          <section className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <section className="bg-primary-light p-8 rounded-2xl shadow-sm border border-gray-100">
             <h3 className="text-2xl font-bold text-[#23293a] mb-4 uppercase tracking-tight text-sm">Why it Matters</h3>
             <p className="text-gray-600 leading-relaxed">{service.whyItMatters}</p>
           </section>
@@ -95,7 +94,7 @@ function ServiceDetails() {
             <h3 className="text-xl font-bold text-[#23293a] mb-4">{service.sectionTitle}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {service.sectionItems?.map((item, i) => (
-                <div key={i} className="flex items-center gap-3 bg-gray-100 p-3 rounded-lg">
+                <div key={i} className="flex items-center gap-3 bg-primary-light p-3 rounded-lg">
                   <div className="w-2 h-2 rounded-full bg-primary" />
                   <span className="text-sm font-medium text-gray-700">{item}</span>
                 </div>

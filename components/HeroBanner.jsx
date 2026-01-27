@@ -6,14 +6,8 @@ export default function HeroBanner({ pretitle = '', title = '', description = ''
     return (
         <section className="relative h-[40vh] overflow-hidden">
             {/* Background Image with overlay */}
-            <div className="absolute inset-0 z-0">
-                {bgSrc ? (
-                    <img
-                        src={bgSrc}
-                        alt={title || 'Background'}
-                        className="h-full w-full object-cover object-center"
-                    />
-                ) : null}
+            <div className="absolute inset-0 z-0 bg-primary-dark">
+                
                 <div className="absolute inset-0 mix-blend-multiply"></div>
             </div>
 

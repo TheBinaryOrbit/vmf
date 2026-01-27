@@ -76,7 +76,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="sticky top-0 z-[100] bg-white sm:pl-16 px-6 py-3 flex items-center justify-between shadow-md">
+        <nav className="sticky top-0 z-[100] bg-primary-light sm:pl-16 px-6 py-3 flex items-center justify-between shadow-md">
             {/* Progress track */}
             <div className="pointer-events-none absolute left-0 bottom-0 h-[2px] w-full bg-primary/20" />
             {/* Progress bar */}

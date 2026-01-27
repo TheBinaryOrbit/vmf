@@ -10,7 +10,7 @@ export const metadata = createMetadata("about");
 
 export default function About() {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-primary-light">
 
             <HeroBanner
                 pretitle={about.hero.pretitle}
@@ -64,7 +64,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="bg-white py-20 border-t border-[#ede0c6]">
+            <div className="bg-primary-light py-20 border-t border-[#ede0c6]">
                 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
                     <div>
                         <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4 border-b-2 border-primary inline-block pb-2">
