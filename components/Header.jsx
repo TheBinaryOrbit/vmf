@@ -60,7 +60,7 @@ function Navbar() {
     after:duration-300 
     after:ease-out
     hover:after:scale-x-100
-    text-primary-darker
+    text-secondary-darker
   `;
 
     const handleContactClick = (e) => {
@@ -115,9 +115,9 @@ function Navbar() {
                 aria-label={open ? "Close menu" : "Open menu"}
             >
                 {open ? (
-                    <X className="w-6 h-6 text-primary" />
+                    <X className="w-6 h-6 text-secondary" />
                 ) : (
-                    <Menu className="w-6 h-6 text-primary" />
+                    <Menu className="w-6 h-6 text-secondary" />
                 )}
             </button>
 

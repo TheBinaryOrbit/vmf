@@ -23,7 +23,7 @@ export default function About() {
 
             <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-primary pl-4">
+                    <h2 className="text-3xl font-bold text-primary mb-6 border-l-4 border-primary pl-4">
                         {about.whoWeAre.heading}
                     </h2>
                     {about.whoWeAre.paragraphs.map((para, index) => {
@@ -56,7 +56,7 @@ export default function About() {
                         alt={about.whoWeAre.image.alt}
                         className="rounded-2xl shadow-2xl border border-[#e5d3b3] "
                     />
-                    {/* <div className="absolute -bottom-6 -left-6 bg-[#910606] text-white px-6 py-3 rounded-lg shadow-lg">
+                    {/* <div className="absolute -bottom-6 -left-6 bg-[#910606] text-light px-6 py-3 rounded-lg shadow-lg">
                         <p className="text-sm font-medium tracking-wide">
                             {about.whoWeAre.image.badge}
                         </p>
@@ -67,7 +67,7 @@ export default function About() {
             <div className="bg-primary-light py-20 border-t border-[#ede0c6]">
                 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4 border-b-2 border-primary inline-block pb-2">
+                        <h3 className="text-2xl font-bold text-primary mb-4 border-b-2 border-primary inline-block pb-2">
                             {about.vision.heading}
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-justify">
@@ -75,7 +75,7 @@ export default function About() {
                         </p>
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4 border-b-2 border-primary inline-block pb-2">
+                        <h3 className="text-2xl font-bold text-primary mb-4 border-b-2 border-primary inline-block pb-2">
                             {about.mission.heading}
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-justify">
@@ -110,7 +110,7 @@ export default function About() {
             {/* <section className="bg-slate-50 py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center mb-16">
-                        <h2 className="text-base font-semibold leading-7 text-primary">
+                        <h2 className="text-base font-semibold leading-7 text-secondary">
                             {about.faq.badge}
                         </h2>
                         <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

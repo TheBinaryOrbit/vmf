@@ -21,7 +21,7 @@
   --color-background-dark: #001d3d;
   
   /* Text Colors */
-  --color-text-primary: #001d3d;
+  --color-text-secondary: #001d3d;
   --color-text-secondary: #23293a;
   --color-text-light: #575757;
   --color-text-muted: #7a7a7a;
@@ -60,14 +60,16 @@ html {
 }
 
 .text-primary {
+  @apply text-black;
+}
+.text-secondary {
   @apply text-[#910606];
 }
 
-
-
-.text-secondary {
-  @apply text-[#164972];
+.text-light {
+  @apply text-white;
 }
+
 
 .border-primary {
   @apply border-[#910606];

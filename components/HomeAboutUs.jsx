@@ -6,19 +6,19 @@ const slider1 = require('@/public/images/slider1.jpeg');
                 
 function HomeAboutUs() {
   return (
-    <section className="bg-primary-light">
-      <section id="about-us" className="relative py-20 px-4 md:px-0 bg-primary flex justify-center items-center md:rounded-br-[15%] rounded-tl-0 rounded-br-0">
+    <section className="bg-white">
+      <section id="about-us" className="relative py-20 px-4 md:px-0 bg-primary flex justify-center items-center md:rounded-br-[15%] rounded-tl-[15%] rounded-br-0">
         <div className="max-w-7xl w-full mx-auto bg-primary-light rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden">
           <div className="flex-1 p-10 flex flex-col justify-center">
             {/* Header Section */}
-            <h3 className="uppercase text-[#23293a] font-bold tracking-widest text-lg mb-2">{homeAbout.toptitle}</h3>
-            <p className="text-primary font-semibold text-sm tracking-wide mb-4 uppercase">
+            <h3 className="uppercase text-primary font-bold tracking-widest text-lg mb-2">{homeAbout.toptitle}</h3>
+            <p className="text-secondary font-semibold text-sm tracking-wide mb-4 uppercase">
                 {homeAbout.toptitle}
             </p>
             <div className="w-12 h-1 bg-primary mb-6" />
 
             {/* Content Section */}
-            <div className="text-[#000000] text-lg leading-relaxed mb-6 space-y-4">
+            <div className="text-primary text-lg leading-relaxed mb-6 space-y-4">
               <p>
                 {homeAbout.description1}
               </p>
@@ -32,15 +32,15 @@ function HomeAboutUs() {
 
             {/* Signature Section */}
             <div className="mt-6 mb-2">
-              <span className="block text-3xl font-signature text-[#000000] mb-1" style={{ fontFamily: 'Dancing Script, cursive' }}>
+              <span className="block text-3xl font-signature text-primary mb-1" style={{ fontFamily: 'Dancing Script, cursive' }}>
                 {homeAbout.foundername}
               </span>
-              <span className="block text-xs tracking-widest text-[#000000] uppercase">
+              <span className="block text-xs tracking-widest text-primary uppercase">
                 {homeAbout.foundertitle}
               </span>
             </div>
 
-            <Link href={homeAbout.button.link} className="text-primary text-xl hover:translate-x-2 duration-300 rounded font-semibold transition-all cursor-pointer text-start mt-4"  
+            <Link href={homeAbout.button.link} className="text-secondary text-xl hover:translate-x-2 duration-300 rounded font-semibold transition-all cursor-pointer text-start mt-4"  
             >
               {homeAbout.button.text}
             </Link>

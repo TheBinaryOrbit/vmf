@@ -24,10 +24,10 @@ const TestimonialSection = () => {
         
         {/* Header Section */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 border border-primary/40 text-primary rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
+          <span className="inline-block px-4 py-1 border border-primary/40 text-secondary rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
             {testimonials.badge}
           </span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-serif font-bold text-balance text-foreground">{testimonials.heading}</h2>
+          <h2 className="mt-3 text-4xl text-primary md:text-5xl font-serif font-bold text-balance text-foreground">{testimonials.heading}</h2>
         </div>
 
         {/* Testimonials Grid with Animation */}
@@ -39,10 +39,10 @@ const TestimonialSection = () => {
               <div className="relative bg-white min-h-64 border border-primary/20 rounded-lg p-8 mb-10 shadow-sm hover:shadow-md transition-shadow">
                 {/* Quote Icon */}
                 <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white p-2 rounded-full border border-primary/20">
-                  <Quote className="w-8 h-8 text-primary fill-primary" />
+                  <Quote className="w-8 h-8 text-secondary fill-primary" />
                 </div>
                 
-                <p className="text-gray-500 text-center leading-relaxed">
+                <p className="text-primary text-center leading-relaxed">
                   {item.text}
                 </p>
 
@@ -59,7 +59,7 @@ const TestimonialSection = () => {
                     className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-xl ring-1 ring-gray-100"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-[#001d3d] mb-1">{item.name}</h3>
+                <h3 className="text-xl font-bold text-primary mb-1">{item.name}</h3>
                 {/* <p className="text-gray-400 text-sm">{item.profession}</p> */}
               </div>
             </div>

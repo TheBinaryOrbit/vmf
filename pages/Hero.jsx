@@ -59,12 +59,12 @@ function HeroSection() {
                     <div className="flex-1 flex items-center  w-full sm:w-[50%]  justify-center sm:mr-[-40] h-[400px] md:h-[500px]">
                         <div className="relative z-10 w-full max-w-[500px] text-left flex flex-col items-start justify-center h-full bg-transparent rounded-lg mt-8 md:mt-0">
                             {/* Main Headline */}
-                            <h1 className="text-3xl md:text-4xl font-serif text-[#000000] mb-4 font-bold leading-tight">
+                            <h1 className="text-3xl md:text-4xl font-serif text-primary mb-4 font-bold leading-tight">
                                 {home.heading.part1} <br /> {home.heading.part2}
                             </h1>
 
                             {/* Sub-headline */}
-                            <h2 className="text-xl font-semibold text-primary mb-4">
+                            <h2 className="text-xl font-semibold text-secondary mb-4">
                                 {home.subheading}
                             </h2>
 
@@ -75,7 +75,7 @@ function HeroSection() {
 
                             {/* Call to Action Button */}
                             <button
-                                className="bg-primary text-white px-7 py-3 rounded font-semibold mb-10 shadow hover:bg-primary/80 transition-all cursor-pointer"
+                                className="bg-primary text-light px-7 py-3 rounded font-semibold mb-10 shadow hover:bg-primary/80 transition-all cursor-pointer"
                             >
                                 <a href={home.button.link}>{home.button.text}</a>
                             </button>
@@ -83,12 +83,12 @@ function HeroSection() {
                             {/* Founder Signature Section */}
                             <div className="mt-4">
                                 <span
-                                    className="block text-3xl font-signature text-[#000000] mb-2"
+                                    className="block text-3xl font-signature text-primary mb-2"
                                     style={{ fontFamily: 'Dancing Script, cursive' }}
                                 >
                                     {home.founder.name}
                                 </span>
-                                <span className="block text-xs tracking-widest text-[#000000]">
+                                <span className="block text-xs tracking-widest text-primary">
                                     {home.founder.title}
                                 </span>
                             </div>

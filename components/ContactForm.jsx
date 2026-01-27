@@ -52,7 +52,7 @@ const ContactFrom = () => {
     >
       {/* Left: Form */}
       <div className="w-full" data-aos="fade-right">
-        <p className="text-primary mb-6 md:text-left text-center font-bold text-2xl">
+        <p className="text-secondary mb-6 md:text-left text-center font-bold text-2xl">
           Send us a message
         </p>
 
@@ -135,7 +135,7 @@ const ContactFrom = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className={`w-full py-3 text-white rounded-xl font-bold font-lora transition-all duration-300 flex items-center justify-center gap-2 ${
+            className={`w-full py-3 text-light rounded-xl font-bold font-lora transition-all duration-300 flex items-center justify-center gap-2 ${
               isLoading 
                 ? 'bg-gray-400 cursor-not-allowed' 
                 : 'bg-primary hover:bg-primary-dark hover:shadow-2xl hover:scale-[1.01] cursor-pointer'
@@ -143,7 +143,7 @@ const ContactFrom = () => {
           >
             {isLoading && (
               <svg 
-                className="animate-spin h-5 w-5 text-white" 
+                className="animate-spin h-5 w-5 text-light" 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="none" 
                 viewBox="0 0 24 24"

@@ -46,13 +46,13 @@ export default function ServicePage() {
       <div className="relative max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 border border-white/80 text-white rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
+          <span className="inline-block px-4 py-1 border border-white/80 text-light rounded-md text-sm font-semibold mb-4 bg-blue-50/30">
             {services.pageHeader.badge}
           </span>
-          <h2 className="mt-3 text-4xl md:text-5xl text-white font-serif font-bold text-balance text-foreground">
+          <h2 className="mt-3 text-4xl md:text-5xl text-light font-serif font-bold text-balance text-foreground">
             {services.pageHeader.heading}
           </h2>
-          <p className="mt-4 text-muted-foreground text-pretty max-w-4xl mx-auto text-white">
+          <p className="mt-4 text-muted-foreground text-pretty max-w-4xl mx-auto text-light">
             {services.pageHeader.description}
           </p>
         </div>
@@ -67,11 +67,11 @@ export default function ServicePage() {
                 onClick={() => setActiveTab(service)}
                 className={`w-full h-25 flex items-center gap-4 p-5 rounded-xl transition-all duration-300 border text-lg font-semibold ${
                   activeTab.id === service.id
-                    ? "bg-primary text-white border-primary text-xl shadow-lg shadow-primary/30 scale-[1.02]"
+                    ? "bg-primary text-light border-primary text-xl shadow-lg shadow-primary/30 scale-[1.02]"
                     : "bg-primary-light text-slate-700 border-red-100 hover:border-primary/30"
                 }`}
               >
-                <span className={activeTab.id === service.id ? "text-white" : "text-primary"}>
+                <span className={activeTab.id === service.id ? "text-light" : "text-secondary"}>
                   {service.tabIcon}
                 </span>
                 {service.title}
@@ -105,7 +105,7 @@ export default function ServicePage() {
 
                 {/* Text Content Section */}
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 leading-tight">
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4 leading-tight">
                     {activeTab.fullTitle}
                   </h3>
                   <p className="text-slate-500 mb-8 leading-relaxed">
@@ -114,9 +114,9 @@ export default function ServicePage() {
 
                   <div className="space-y-3 mb-8">
                     {activeTab.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-3 text-slate-700 font-semibold">
+                      <div key={idx} className="flex items-center gap-3 text-primary font-semibold">
                         <div className="bg-red-100 p-1 rounded-full">
-                          <Check className="w-4 h-4 text-primary" />
+                          <Check className="w-4 h-4 text-secondary" />
                         </div>
                         {feature}
                       </div>
@@ -129,7 +129,7 @@ export default function ServicePage() {
                         sessionStorage.setItem('selectedService', JSON.stringify(activeTab.intId));
                       } catch (e) { }
                     }}
-                    className="text-primary text-md duration-300 rounded font-semibold mb-10 hover:text-primary/80 transition-all cursor-pointer text-start"
+                    className="text-secondary text-md duration-300 rounded font-semibold mb-10 hover:text-secondary/80 transition-all cursor-pointer text-start"
                   >
                     Learn More &rarr;
                   </Link>

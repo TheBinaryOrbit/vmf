@@ -13,14 +13,14 @@ export default function HeroBanner({ pretitle = '', title = '', description = ''
 
             {/* Content */}
             <div className="relative z-10 px-6 h-full flex items-center justify-center">
-                <div className="mx-auto max-w-4xl text-center text-white">
+                <div className="mx-auto max-w-4xl text-center text-light">
                     {pretitle ? (
                         <div className="mb-8 inline-flex items-center rounded-full bg-red-100/90 px-4 py-2 text-sm font-medium text-secondary ring-1 ring-red-300">
                             {pretitle}
                         </div>
                     ) : null}
 
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-light sm:text-6xl lg:text-7xl">
                         {title}
                     </h1>
                     {description ? (

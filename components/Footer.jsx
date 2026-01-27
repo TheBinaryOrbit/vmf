@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto">
                 <div className='flex flex-col md:flex-row justify-between items-center mb-10 text-center md:text-left'>
                     {/* <Image src={img} alt="img" className='w-32' /> */}
-                    {/* <h1 className="text-2xl md:text-3xl text-white font-semibold capitalize mt-4 md:mt-0">Job well-done.</h1> */}
+                    {/* <h1 className="text-2xl md:text-3xl text-light font-semibold capitalize mt-4 md:mt-0">Job well-done.</h1> */}
                 </div>
 
-                <div className='text-white grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 mb-10 gap-y-8 space-y-6'>
+                <div className='text-light grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 mb-10 gap-y-8 space-y-6'>
                     <div className=' col-span-2 flex flex-col items-center justify-start sm:items-start sm:justify-between sm:pr-5'>
                         <img src={logo.src} alt="footer logo" className='w-48 mb-3' />
                         <p className='text-slate-200 text-center sm:text-justify text-sm pr-0 sm:pr-10 font-body'>
@@ -56,12 +56,12 @@ const Footer = () => {
             </div>
 
             <div className='border-t-2 max-w-7xl mx-auto border-gray-200 py-5 flex flex-col md:flex-row justify-between items-center'>
-                <p className='text-white text-sm mb-3 sm:mb-0'>{footer.companycopiright}</p>
+                <p className='text-light text-sm mb-3 sm:mb-0'>{footer.companycopiright}</p>
                 <ul className='flex gap-2'>
-                    <li><a href={footer.socialMedia.facebook} target='_blank'><Facebook size={20} className='text-white'/></a></li>
-                    <li><a href={footer.socialMedia.instagram} target='_blank'><Instagram size={20} className='text-white' /></a></li>
-                    <li><a href={footer.socialMedia.linkedin} target='_blank'><Linkedin size={20} className='text-white' /></a></li>
-                    <li><a href={footer.socialMedia.twitter} target='_blank'><Twitter size={20}  className='text-white'/></a></li>
+                    <li><a href={footer.socialMedia.facebook} target='_blank'><Facebook size={20} className='text-light'/></a></li>
+                    <li><a href={footer.socialMedia.instagram} target='_blank'><Instagram size={20} className='text-light' /></a></li>
+                    <li><a href={footer.socialMedia.linkedin} target='_blank'><Linkedin size={20} className='text-light' /></a></li>
+                    <li><a href={footer.socialMedia.twitter} target='_blank'><Twitter size={20}  className='text-light'/></a></li>
                 </ul>
             </div>
         </footer>

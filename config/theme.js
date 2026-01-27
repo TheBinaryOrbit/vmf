@@ -41,7 +41,7 @@ export const colors = {
 
 /**
  * TAILWIND COMPATIBLE COLOR MAP
- * Use these in Tailwind classes like: bg-primary, text-primary, etc.
+ * Use these in Tailwind classes like: bg-primary, text-secondary, etc.
  */
 export const tailwindColors = {
   primary: {
